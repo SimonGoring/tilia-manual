@@ -12,7 +12,6 @@ Contents:
    :maxdepth: 2
 
 
-
 Indices and tables
 ========================================
 
@@ -96,7 +95,7 @@ There are additional columns (“Elements”, “Units”, “Context”, and �
 Columns
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Codes
-  Variables are assigned shortened “codes” for identification.  These codes are associated with a **Lookup Table** for a particular dataset type.  For example, *Asarum* (wild ginger) is associated with the code “Asu”.
+  Variables are assigned shortened “codes” for identification.  These codes are associated with a **`Lookup Table`_** for a particular dataset type.  For example, *Asarum* (wild ginger) is associated with the code “Asu”.
 Element
   Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
 Units
@@ -166,8 +165,11 @@ LOI
 Editing Your Data
 ---------------------------------------------------------------------
 
-Loading the Variable Lookup Files
+We are going to walk through the process of generating a Tilia record for your dataset in a way that is (at least to us) intuitive.  This is not neccessarily the way that Tilia is set up by default.  At any time you can navigate to a particular section through the sidebar.
+
+Lookup Table
 ``````````````````````````````````````````````````````````````````````
+
 Before you begin, you need to load lookup files appropriate for your data type.  This does not (yet) happen automatically. To do so, click **Tools > Variable Lookup**.  The following window will appear:
 
 .. image :: images/image04.png
@@ -178,6 +180,7 @@ Because of the way lookup tables are structured, it is often difficult to includ
 
 Editing Your Metadata
 ``````````````````````````````````````````````````````````````````````
+
 In general, it’s easiest to start editing your collection information starting with the **Metadata** tab.  If you happen to be entering multiple datasets for the same site (or study) you can enter the **Metadata**, and then save the file (without entering any data) so it serves as a template for each subsequent dataset.  This helps speed up the process of generating Tilia files, particularly for large studies or multiproxy analyses.
 
 .. image :: images/metadata_tabs.png
@@ -190,14 +193,16 @@ Metadata editing requires information to be entered on the following subtabs:
 + Geochronology
 + Chronologies
 + Lithology
-+ LOI
-+ Publications :ref:`publications-tab`
-+ Contacts :ref:`contacts-tab`
++ `LOI`_
++ `Publications Tab`_
++ `Contacts Tab`_
 
-.. _publications-tab:
+These tabs are generally arranged in the order of importance as far as a data user might be concerned, but for data entry it often makes sense to start by adding publication & contact information first.  From here we would then enter information about the Geochronological & Chronological data.
 
-Modifying the Publications Tab
+
+Publications Tab
 ``````````````````````````````````````````````````````````````````````
+
 The publications tab is where publication data associated with the record will be stored.  This data goes into Neotoma (and may already be stored in Neotoma) as part of the record, but is also stored apart from the collection record.
 
 .. figure :: images/metadata_publications.png
@@ -215,45 +220,81 @@ Contacts are all individuals related to the record.  This includes the individua
 .. figure :: images/metadata_contacts.png
    :scale: 70
 
-Contacts can (and likely will) be entered as you enter data into the other tabs.  You don't need to enter information in all at once, but you will need to link to individual contacts from a number of tabs (for example the :ref:`cronology-tab`). If you need to enter a Contact directly, follow the directions below:
+Contacts can (and likely will) be entered as you enter data into the other tabs.  You don't need to enter information in all at once, but you will need to link to individual contacts from a number of tabs (for example the `Cronology Tab`_). If you need to enter a Contact directly, follow the directions below:
 
 First, check to confirm that contact information from the publications tab was entered correctly. Remember, contacts include the authors of the published paper you are entering, yourself (the data enterer), and the fossil collector(s). Authors should have been inserted previously when entering data in the publications tab. To add a new contact click the green + at the bottom. Enter a family name and click the rat. A new screen will appear. In the search box enter the family name and click the binoculars. If the correct contact is found and all data is up-to-date, click Match and it will be added to the Contacts Tab. If the contact info needs to be updated, click the blue arrow and add any additional information. Then click Update Contact. If there is not a contact in the database, press OK and then press the blue arrow to transfer the family name from the Tilia Contact to the Neotoma Contact. Fill in any data you can in the Neotoma Contact. Leading initials are the initials of the first and middle names with a period after them. Phone numbers should be entered in the following format: +1-XXX-XXX-XXXX. When all data is entered click Upload Contact.
 
 Site Tab
 ``````````````````````````````````````````````````````````````````````
-Site Name – Use the common name or most popular name used from the publication. Check Neotoma to make sure this name doesn’t already exist.
-First Geopolitical Division - Country the site is in.
-Second Geopolitical Division – State the site is in.
-Third Geopolitical Division – County the site is in.
-Administrative Unit –  Site is in private, state, federal, etc. land.
-Latitude/Longitude – For exact locations, click “Point”. Enter in latitude and longitude. You will have the option to enter in either the decimal, degree or combination of decimal and degree. Enter data as decimals. Click the “Fuzzy” option if you don’t want the exact location of the site made publicly available and choose the radius of the range. If the general locality is unclear, click “Box” and fill in the four coordinate points. Hit OK. To add a bounding box directly from map view, click the google maps icon. A new tab named “Site Locator” will open. Select the “Box” button and N, E, S, W orientations will appear. Select one of the orientation buttons at a time, and click around the pin dropped on the map,  to create the perimeter of the bounding box.Doing so will set the north and south latitudes equal and the east and west longitudes equal.
-Site Description – Enter in any additional information that describes the general description of the location.
-Site Notes – Enter in any additional notes about the locality that may clear up any confusion, such as abbreviations, or changes in the site’s historical naming. [I’ll ADD ANYTHING ELSE I CAN THINK OF HERE]
+This provides important information about the site and geographic context of the collection you are submitting.  Be sure to be as accurate as possible.  If you don't have accurate Latitude/Longitude available it is possible to obtain these values using the Google Maps button, which will provide a map based interface with which to select a location.
+
+Site Name
+  Use the common name or most popular name used from the publication. Check Neotoma to make sure this name doesn’t already exist.
+First Geopolitical Division
+  Country the site is in.
+Second Geopolitical Division
+  State the site is in.
+Third Geopolitical Division
+  County the site is in.
+Administrative Unit
+  Site is in private, state, federal, etc. land.
+Latitude/Longitude
+  For exact locations, click “Point”. Enter in latitude and longitude. You will have the option to enter in either the decimal, degree or combination of decimal and degree. Enter data as decimals. Click the “Fuzzy” option if you don’t want the exact location of the site made publicly available and choose the radius of the range. If the general locality is unclear, click “Box” and fill in the four coordinate points. Hit OK. To add a bounding box directly from map view, click the google maps icon. A new tab named “Site Locator” will open. Select the “Box” button and N, E, S, W orientations will appear. Select one of the orientation buttons at a time, and click around the pin dropped on the map,  to create the perimeter of the bounding box. Doing so will set the north and south latitudes equal and the east and west longitudes equal.
+Site Description
+  Enter in any additional information that describes the general description of the location.
+Site Notes
+  Enter in any additional notes about the locality that may clear up any confusion, such as abbreviations, or changes in the site’s historical naming.  Many lakes (for example) have unique identifiers as part of their management by local or regional authorities.  These, along with the latitude and longitude can help clarify uncertain naming.
 
 Collection Unit Tab
 ``````````````````````````````````````````````````````````````````````
-Handle – Create a unique handle name in all caps. This should be 4-10 letters long.
-Collection Unit Type – This is what type of collection is it. For mammals, the most common choices will be Excavation, Isolated Specimen, Animal Midden, Surface Float, Midden.
-Collection Unit Name – Enter in a name if there are multiple collections from the same locality. The name should be descriptive of the particular collection (e.g. collection number).
-Collection Device/Location in Site – These fields are for pollen collection and can be left blank.
-Collectors – Choose the appropriate person from the contact list. The format should be first name initial, middle name initial and last name (e.g. K.C. Maguire)
-Date Collected – Record the most accurate date provided. If only the year is known, use January 1st. If only the month and year are known, use the 1st.
-Depositional Environment – This will most likely be under terrestrial, so click the arrow next to terrestrial to get more options and search and then click on the appropriate subcategory to get more options.
-Substrate – If known use the arrows to get more options and click the appropriate category.
-Collection Unit Notes – add in any additional information about this specific collection that would be useful to other researchers. (e.g. notes on how the unit was collected, when the unit was collected, etc.)
-Slope Angle, Slope Aspect, Water Depth – generally used for pollen collections - so leave blank.
+Handle
+  Create a unique handle name in all caps. This should be 4-10 letters long.
+Collection Unit Type
+  This is the type of collection you are recording. For mammals, the most common choices will be Excavation, Isolated Specimen, Animal Midden, Surface Float, Midden.  For pollen you might select "Core" or "Modern"
+Collection Unit Name
+  If there are multiple collections from the same locality it is important to identify them uniquely. The name should be descriptive of the particular collection (e.g. collection number).
+Collection Device/Location in Site
+  These fields are for collections that use particular field techniques, for example coring devices or other extractive tools.
+Collectors
+  If you have entered these individuals from the `Contacts Tab`_ then you will be able to select the individuals from the dropdown menu.  If an individual is not selected then navigate to the Contacts Tab to add them.  It is best to add all individuals involved in the collection, not just the individuals listed in associated publications.
+Date Collected
+  Record the most accurate date provided. If only the year is known, use January 1st. If only the month and year are known, use the 1st.
+Depositional Environment
+  This will most likely be under terrestrial, so click the arrow next to terrestrial to get more options and search and then click on the appropriate subcategory to get more options.
+Substrate
+  If known use the arrows to get more options and click the appropriate category.
+Collection Unit Notes
+  Any additional information about this specific collection that would be useful to other researchers. (e.g. notes on how the unit was collected, when the unit was collected, etc.)
+Slope Angle
+  Can be obtained in the field.  If unknown then leave the field blank.
+Slope Aspect
+  Can be obtained in the field.  If unknown then leave the field blank.
+Water Depth
+  Can be obtained in the field.  If unknown then leave the field blank.
 
 Dataset Tab
 ``````````````````````````````````````````````````````````````````````
-Dataset Type – Vertebrate fauna.
-Dataset Name – Unique name to this faunal list (not always necessary to fill out).
-Investigators – Who is responsible for the dataset, often but not always the author(s) of the published paper. The format should be first name initial, middle name initial and last name (e.g. K.C. Maguire).
-Publications – Full publication record. Choose the appropriate publications associated with this locality. Format: Maguire, K.C., Blois, J.L., 2015. The best paper ever written.Nature Journal 36:3-15.
-Repository – The museum or institution that houses the collection [S THERE SOME WAY WE CAN ADD MORE REPOSITORIES INTO TILIA? i’VE COME ACROSS SOME THAT WERE NOT PRESENT.]
-Dataset Notes – any additional notes regarding the dataset, including the locality number for the repository institution (e.g. UCMP V35864).
-Data Processors – The person who enters the data into the database. Format: K.C. Maguire
-Spatial Extent – Don’t worry about this box, it’s mainly relevant to aggregate dataset. But if you want to add something, for most cases click Single Stratigraphic. Unclick box if the top sample is not modern surface sample.
+
+Dataset Type
+  Vertebrate fauna.
+Dataset Name
+  Unique name to this faunal list (not always necessary to fill out).
+Investigators
+  Who is responsible for the dataset, often but not always the author(s) of the published paper. This information should be available in the `Contacts Tab`_ edited earlier.
+Publications
+  Full publication record. Choose the appropriate publications associated with this locality. In general these should have been entered as part of data entry in the `Publications Tab`_.  If they have not been, navigate to the Publications Tab and enter this information.
+Repository
+  The museum or institution that houses the collection.  If there are repositories that are not currently listed in the drop-down menu contact the Neotoma Paleoecological Database.
+Dataset Notes
+  Any additional notes regarding the dataset, including the locality number for the repository institution (e.g. UCMP V35864).
+Data Processors
+  The person who enters the data into the database.
+Spatial Extent
+  Don’t worry about this box, it’s mainly relevant to aggregate dataset. But if you want to add something, for most cases click Single Stratigraphic. Unclick box if the top sample is not modern surface sample.
+
 Data Tab
+--------------------------------------------------------------------------------
+
 Now that the basic metadata have been entered, the taxonomic data can be entered, so navigate to the main Data tab.
 First, add the Analysis Unit names to the row headers, row 2.
 If depths are available, add them (midpoints, generally) to the first row, above the relevant named analysis unit.
@@ -271,6 +312,7 @@ OK, once the main data are entered, I go back to the metadata and work on the ge
 
 Geochronology Tab
 ``````````````````````````````````````````````````````````````````````
+
 The Geochronology tab is central to generating the chronologies for your record.  It becomes linked to the `Contacts Tab`_ and to the `Chronology Tab`_.  The tab contains all geochronological records used for chronology construction.  In pracitice most Neotoma records include geochronological data, but this is not always the case.
 
 .. figure :: images/metadata_geochronology.png
@@ -333,6 +375,7 @@ If you have more than one dated sample for this geochronology element, click the
 
 Chronology Tab
 ``````````````````````````````````````````````````````````````````````
+
 The Chronology is separate from the `Geochronology`_.  Geochronology records dated samples, while the chronology includes undated samples (like a core-top in a sediment core) and tells the user how the age model for a record was put together.
 
 To get started, open the “Chronologies” tab and click within the white bar containing the text “Click here to add a new row”.
@@ -381,18 +424,27 @@ If you do use Bacon or Clam to generate your interpolated chronology then rememb
 
 Data Tab
 ---------------------------------------------------------------------
+
 Entering New Data
 ``````````````````````````````````````````````````````````````````````
+
 Adding the Chronology
-.................................................................................
-Once the dates are added to the Chronology table, navigate back to the Data Tab.  Here we can import the dates for the model.  There are two options.  If you want Tilia to build the model for you you can select Tools > Chronology.  If you’ve built the model yourself using Bacon or Clam then you can import the output file directly using Tools > Import Chronology > Bacon/Clam.  If you have a record for which the age model is entirely made up of directly dated objects (or absolutely dated records) where the Chronology tab sheet is equivalent to the actual depths/records in the Data sheet then it is possible to directly import the Chronology Tab Sheet using Tools > Import Chronology > Chronologies Tabsheet.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once the dates are added to the Chronology table, navigate back to the Data Tab.  Here we can import the dates for the model.  There are two options.  If you want Tilia to build the model for you you can select **Tools>Chronology**.  If you’ve built the model yourself using Bacon or Clam then you can import the output file directly using **Tools > Import Chronology > Bacon/Clam**.  If you have a record for which the age model is entirely made up of directly dated objects (or absolutely dated records) where the Chronology tab sheet is equivalent to the actual depths/records in the Data sheet then it is possible to directly import the Chronology Tab Sheet using **Tools > Import Chronology > Chronologies Tabsheet**.
 
 To add the chronology from Bacon or Clam that you have already created, Go to Tools > Import Chronology > Bacon/Clam.  Your Chronologies have numbers associated with them in the Chronologies Tab.  Make sure you’re using the right Chronology number.  Bacon and Clam have different options, but you should choose the right file and the age values that make the most sense to you.
 
-Once you click *OK*, navigate to the appropriate file and click okay.
+Once you click *OK*, navigate to the appropriate file and click okay. The chronology will be added to the Data tab.
+
+Some issues may arise in doing this:
+
+I’ve added my chronology, but the ages don’t appear:
+  This may be the result of a chronology whose depths aren’t aligned with the reported depths in the Tilia file.  In the case that
+
 
 Copying an Existing Spreadsheet
-``````````````````````````````````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Importing the
 
@@ -461,10 +513,17 @@ Importing the
 + North American Archaeological time scale
 + Stratigraphic
 
-The chronology will be added to the Data tab.  Some issues may arise in doing this:
-I’ve added my chronology, but the ages don’t appear:
-This may be the result of a chronology whose depths aren’t aligned with the reported depths in the Tilia file.  In the case that
 
-click on the first taxon, first column (the age model info will be inserted on a line above where you click).
-Click on Tools, import chronology.  Check Bacon, make sure the Chronology number is correct, use the weighted mean (default),  click ok.
-This will take you to the Bacon folder, click on the _ages.txt file.  Make sure that you are in the correct directory!  Click import, and viola.
+
+Tools
+===============================================
+
+Tilia provides a number of tools, built in as part of the program.  These tools include.
+
+Chronology Builder
+------------------------------------------------------------------------------
+
+**Tools > Chronology** becomes available when you navigate to the `Data Tab`_.  This tool allows you to build a new chronology (or replicate a published chronology).  You have the option of building a new chronology using one of five methods (linear, polynomial, cubic spline, cubic b-spline, and LOWESS curves), each with their own set of parameters.
+
+.. image :: images/chronology_tool.png
+
