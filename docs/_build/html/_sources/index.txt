@@ -6,11 +6,26 @@
 Tilia Documentation
 ========================================
 
+Acknowledgements
+---------------------------------------------------------------------
+
+This documentation would not be possible without the extrordinary work of Eric C. Grimm who has spent countless hours developing the Tilia platform.  The documentation here makes use of content and structure initially developed by K.C. Maguire, C. Jorgensen, and J. Blois as part of an effort to input mammal records into the Neotoma Paleoecological Database.
+
+This document is in continuous development.  Currently this document supports Tilia v2.0.  To contribute to this document use the `GitHub`_ repository.  You can either raise Issues or contribute directly to the documentation.
+
+.. _GitHub : http://github.com/SimonGoring/tilia-manual
+
+**Pro-tip.  Make sure you save your Tilia file often throughout this process!!**
+
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   get_tilia
+   metadata
+   overview
+   creating
 
 Indices and tables
 ========================================
@@ -19,156 +34,14 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Acknowledgements
-========================================
-This documentation would not be possible without the extrordinary work of Eric C. Grimm who has spent countless hours developing the Tilia platform.  The documentation here makes use of content and structure initially developed by K.C. Maguire, C. Jorgensen, and J. Blois as part of an effort to input mammal records into the Neotoma Paleoecological Database.
-
-This document is in continuous development.  Currently this document supports Tilia v2.0.  To contribute to this document visit our BitBucket_ account or contact me through
-
-.. _BitBucket : http://bitbucket.org/neotomadb/tilia
-
-**Pro-tip.  Make sure you save your Tilia file often throughout this process!!**
-
-Obtaining & Installing Tilia
-========================================
-
-Obtaining Tilia
----------------------------------------------------------------------
-Tilia can be downloaded directly from TiliaIT_ using the *Download* tab.  Once the ZIP file is downloaded it can be opened using a program such as WinRAR, 7ZIP or WinZip.  The downloaded file contains a single file *setup_tilia_X_Y_ZZZ.exe* (where the X, Y and ZZZ represent the version numbering).  This file is an executable that will lead you through the setup process.  Tilia is built for Windows, but can be installed on Macintosh Brand or Linux system using an emulator.
-
-.. _TiliaIT : http://tiliait.com
-
-Installing Tilia on a Macintosh or Linux Machine
----------------------------------------------------------------------
-Tilia is built on a platform that requires the use of Windows.  Given its popularity however, people have found solutions for using the software on multiple platforms.
-
-Installing Tilia on a Macintosh
-``````````````````````````````````````````````````````````````````````
-*The following instructions were kindly provided by `Jonathan Nichols`_:*
-To run Tilia on an OSX machine, the following programs must be installed:
-
-* WINE_ for Darwin and OSX.
-* XQuartz_ (or X11 if you are using OSX 10.5 or older) must be installed.
-
-Once Wine and XQuartz (or X11) are installed and running, navigate to the “Start” menu in Wine and select “Run”
-
-.. _WINE : http://sourceforge.net/projects/darwine/
-.. _Jonathan Nichols : http://www.ldeo.columbia.edu/~jnichols/
-.. _XQuartz : http://www.xquartz.org
-
-.. image :: images/image16.png
-
-Click “Browse” and navigate to the Tilia installer executable (see `Obtaining Tilia`_) and then click “OK”. Hint: Your regular Mac drive is listed as drive “Z:”
-
-Once Tilia is installed it can be run as any other program through Wine.
-
-Installing Tilia on a Linux Machine
-``````````````````````````````````````````````````````````````````````
-If you use Linux you can probably figure it out yourself.
-
-Creating a New Tilia File:
-========================================
-
-Open up the Tilia program and open a new file (**File** > **New**).  A new window will open up, with two tabs at the top (Data & Metadata), several columns (Code, Name and Group) and a single header cell, by default **Pollen**.
-
-.. figure :: images/image01.png
-   :scale: 70
-
-   A brand new empty data file.
-
-The cell that contains the term **Pollen** can be modified to represent one of the other dataset types that Neotoma supports.  Once you have selected the dataset type, it’s possible to then load the lookup files that Tilia uses to standardize taxonomy and other associated sample information.
-
-An Overview of a Tilia File
----------------------------------------------------------------------
-
-The Data Tab
-``````````````````````````````````````````````````````````````````````
-The Data Tab is the first panel you see when you create a new file.  The Data tab will be the main location for the raw data collected at a site or collection unit within a site.
-
-The Data tab contains three fixed columns that are visible immediately: “Code”, “Name” and “Group”.  The Data tab is organized in a Column/Row format, where rows represent variables and the columns are for each individual stratum or sample within the collection unit (e.g., there would be a row for *Pinus* pollen, with each column representing depths within a sediment core).
-There are additional columns (“Elements”, “Units”, “Context”, and “Taphonomy”) that are also available by selecting **Tools** > **Options** and clicking the checkboxes within the “Show Columns” section.
-
-.. figure :: images/ShowColumns.png
-
-   Spreadsheet options for the data tab.  You can make extra variable-related columns visible using Tools > Options
-
-Columns
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Codes
-  Variables are assigned shortened “codes” for identification.  These codes are associated with a **`Lookup Table`_** for a particular dataset type.  For example, *Asarum* (wild ginger) is associated with the code “Asu”.
-Element
-  Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
-Units
-  Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
-Context
-  Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
-Taphonomy
-  Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
-Groups
-  Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
-
-The Metadata Tab
-``````````````````````````````````````````````````````````````````````
-The Metadata Tab is where you put information about the dataset that is not explicitly raw data.  This includes information about the spatial location, the collection unit itself, the particular dataset, the geochronological data associated with the record, how that geochronological data was used to construct a chronology, the lithology, a special tab for Loss on Ignition sampling, contact information and associated publications.  These entries are intended to help you navigate through the tabs so that you understand what is expected of you.  We will learn how to enter data in each tab further down in this guide.
-
-Site
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.. figure :: images/metadata_tab.png
-   :scale: 70
-
-   The "Site" metadata tab.
-
-Collection Unit
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.. figure :: images/metadata_collunit.png
-   :scale: 70
-
-   The "Collection Unit" metadata tab.
-
-Dataset
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.. figure :: images/metadata_dataset.png
-   :scale: 70
-
-   The "Dataset" metadata tab.
-
-Geochronology
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Chronologies
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.. figure :: images/metadata_chronologies.png
-   :scale: 70
-
-   The "Chronologies" metadata tab.
-
-Lithology
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.. figure :: images/metadata_lithology.png
-   :scale: 70
-
-   The "Lithology" metadata tab.
-
-LOI
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-.. figure :: images/metadata_loi.png
-   :scale: 70
-
-   The "LOI" metadata tab (very different from the LOL tab).
-
 Editing Your Data
----------------------------------------------------------------------
+========================================
+
 
 We are going to walk through the process of generating a Tilia record for your dataset in a way that is (at least to us) intuitive.  This is not neccessarily the way that Tilia is set up by default.  At any time you can navigate to a particular section through the sidebar.
 
 Lookup Table
-``````````````````````````````````````````````````````````````````````
+---------------------------------------------------------------------
 
 Before you begin, you need to load lookup files appropriate for your data type.  This does not (yet) happen automatically. To do so, click **Tools > Variable Lookup**.  The following window will appear:
 
@@ -179,7 +52,7 @@ Then choose the tables that apply to the dataset type you are entering (you can 
 Because of the way lookup tables are structured, it is often difficult to include two data types at the same time, since units or taphonomies specific to both proxies may not be available simultaneously.
 
 Editing Your Metadata
-``````````````````````````````````````````````````````````````````````
+---------------------------------------------------------------------
 
 In general, it’s easiest to start editing your collection information starting with the **Metadata** tab.  If you happen to be entering multiple datasets for the same site (or study) you can enter the **Metadata**, and then save the file (without entering any data) so it serves as a template for each subsequent dataset.  This helps speed up the process of generating Tilia files, particularly for large studies or multiproxy analyses.
 
@@ -187,18 +60,17 @@ In general, it’s easiest to start editing your collection information starting
 
 Metadata editing requires information to be entered on the following subtabs:
 
-+ Site
-+ Collection Unit
-+ Dataset
-+ Geochronology
-+ Chronologies
-+ Lithology
-+ `LOI`_
++ `Site Tab`_
++ `Collection Unit Tab`_
++ `Dataset Tab`_
++ `Geochronology Tab`_
++ `Chronologies
++ `Lithology Tab`_
++ `LOI Tab`_
 + `Publications Tab`_
 + `Contacts Tab`_
 
-These tabs are generally arranged in the order of importance as far as a data user might be concerned, but for data entry it often makes sense to start by adding publication & contact information first.  From here we would then enter information about the Geochronological & Chronological data.
-
+These tabs are generally arranged in the order of importance as far as a data user might be concerned, but for data entry it often makes sense to start by adding publication & contact information first.  This information is used throughout the Tilia file, so it makes sense to enter it first.  From here, the rest of the information can be added in any order you wish (and you can navigate to them using the sidebar, or here).  For complex records, where you might find yourself writing multiple Tilia files, *e.g.*, when you have multiple collection units or datasets from an individual site, it makes sense to fill in the Publication, Contacts & Site data and save the file as a template.  If you have common Chronology information across datasets (for example, a pollen & ostrocode record), then fill in those fields and save the file as a template.  This is why it is often helpful to fill in the Metadata first.
 
 Publications Tab
 ``````````````````````````````````````````````````````````````````````
@@ -215,18 +87,23 @@ Note that if you are adding records via Tilia on a Mac, Tilia freezes when enter
 Contacts Tab
 ``````````````````````````````````````````````````````````````````````
 
-Contacts are all individuals related to the record.  This includes the individuals who produced & published the record, but also the individuals who assisted in the preparation of chronologies, or in the submission of the data.
+Contacts are **all** individuals related to the record.  This includes the individuals who produced & published the record, but also the individuals who assisted in the preparation of chronologies, or in the submission of the data.
 
 .. figure :: images/metadata_contacts.png
    :scale: 70
 
 Contacts can (and likely will) be entered as you enter data into the other tabs.  You don't need to enter information in all at once, but you will need to link to individual contacts from a number of tabs (for example the `Cronology Tab`_). If you need to enter a Contact directly, follow the directions below:
 
-First, check to confirm that contact information from the publications tab was entered correctly. Remember, contacts include the authors of the published paper you are entering, yourself (the data enterer), and the fossil collector(s). Authors should have been inserted previously when entering data in the publications tab. To add a new contact click the green + at the bottom. Enter a family name and click the rat. A new screen will appear. In the search box enter the family name and click the binoculars. If the correct contact is found and all data is up-to-date, click Match and it will be added to the Contacts Tab. If the contact info needs to be updated, click the blue arrow and add any additional information. Then click Update Contact. If there is not a contact in the database, press OK and then press the blue arrow to transfer the family name from the Tilia Contact to the Neotoma Contact. Fill in any data you can in the Neotoma Contact. Leading initials are the initials of the first and middle names with a period after them. Phone numbers should be entered in the following format: +1-XXX-XXX-XXXX. When all data is entered click Upload Contact.
+First, check to confirm that contact information from the publications tab was entered correctly. Remember, contacts include the authors of the published paper you are entering, yourself (the data enterer), collector(s) and individuals associated with content including the chronology. Contact information for publicaiton authors will have been inserted when entering data in the `Publications Tab`_.
+
+To add a new contact click the green **+** at the bottom of the window.  This should create an empty contact field.  Neotoma contains a number of pre-existing contacts, so it's always best-practice to first search for an individual first.  To do this, enter the individual's family name and then click the *Neotoma* icon at the end of the field. A new screen will appear. In the search box enter the family name and click the binoculars. If the correct contact is found and all data is up-to-date, click Match and it will be added to the Contacts Tab. If the contact info needs to be updated, click the blue arrow and add any additional information. Then click Update Contact.
+
+If there is not a contact in the database, press OK and then press the blue arrow to transfer the family name from the Tilia Contact to the Neotoma Contact. Fill in any data you can in the Neotoma Contact. Leading initials are the initials of the first and middle names with a period after them. Phone numbers should be entered in the following format: +1-XXX-XXX-XXXX. When all data is entered click Upload Contact.
 
 Site Tab
 ``````````````````````````````````````````````````````````````````````
-This provides important information about the site and geographic context of the collection you are submitting.  Be sure to be as accurate as possible.  If you don't have accurate Latitude/Longitude available it is possible to obtain these values using the Google Maps button, which will provide a map based interface with which to select a location.
+
+The Site Tab provides important information about the site and geographic context of the collection you are submitting.  Be sure to be as accurate as possible.  If you don't have accurate Latitude/Longitude available it is possible to obtain these values using the Google Maps button, which will provide a map based interface with which to select a location.
 
 Site Name
   Use the common name or most popular name used from the publication. Check Neotoma to make sure this name doesn’t already exist.
@@ -291,24 +168,6 @@ Data Processors
   The person who enters the data into the database.
 Spatial Extent
   Don’t worry about this box, it’s mainly relevant to aggregate dataset. But if you want to add something, for most cases click Single Stratigraphic. Unclick box if the top sample is not modern surface sample.
-
-Data Tab
---------------------------------------------------------------------------------
-
-Now that the basic metadata have been entered, the taxonomic data can be entered, so navigate to the main Data tab.
-First, add the Analysis Unit names to the row headers, row 2.
-If depths are available, add them (midpoints, generally) to the first row, above the relevant named analysis unit.
-To add thicknesses, add a blank row UNDER the Analysis Unit name.  Then right click in the top left cell of that row, and enter Metadata → Analysis Unit → Thickness
-If known, you can add the analyst too (e.g., if different people identified different strata within the deposit).  To do this, add another row below thickness using the same procedure as above, adding Metadata → Sample  Analyst.  Then, go to the cell below the first analysis unit, regular click in the cell, and add the relevant contacts from the `Contacts Tab`_.  Once you’ve added the first cell, you can then copy and paste to other analysis units.
-Next fill in the taxa list, starting directly below the header metadata.
-First fill out the Name column using the automatic pull down menu to select the taxon. This will automatically fill out the Code column and the Group column for you.
-Element – the type of element representing that taxon. Typical faunal elements are bones, teeth, scales, and other hard body parts. Bone and tooth elements may be specifically identified (e.g. «tibia» or even more precisely «tibia, distal, left», «M2, lower, left»). Use the pull down menu.
-Units – choose the appropriate unit that the data represent. If you have more than one unit type (e.g. Present/Absent, MNI and NISP), add a second row for that taxon and include data for the second unit type.
-Context – add if known
-Taphonomy  – add if known
-Data –  Fill in the appropriate values for each cell, e.g., 1s or 0s if entering presence/absence data, or integer values if entering NISP or MNI
-Specimens –  Eventually, will need to add in info about individual specimens.
-OK, once the main data are entered, I go back to the metadata and work on the geochronology and chronology information
 
 Geochronology Tab
 ``````````````````````````````````````````````````````````````````````
@@ -428,6 +287,8 @@ Data Tab
 Entering New Data
 ``````````````````````````````````````````````````````````````````````
 
+Starting from a blank Data Tab we can fill in some basic information about the individual analysis units.  If your data has depths then these should be entered along the very top row (Row 1)
+
 Adding the Chronology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -445,6 +306,26 @@ I’ve added my chronology, but the ages don’t appear:
 
 Copying an Existing Spreadsheet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+First, add the Analysis Unit names to the row headers, row 2.
+If depths are available, add them (midpoints, generally) to the first row, above the relevant named analysis unit.
+To add thicknesses, add a blank row UNDER the Analysis Unit name.  Then right click in the top left cell of that row, and enter Metadata → Analysis Unit → Thickness
+
+If known, you can add the analyst too (e.g., if different people identified different strata within the deposit).  To do this, add another row below thickness using the same procedure as above, adding Metadata → Sample  Analyst.  Then, go to the cell below the first analysis unit, regular click in the cell, and add the relevant contacts from the `Contacts Tab`_.  Once you’ve added the first cell, you can then copy and paste to other analysis units.
+
+Next fill in the taxa list, starting directly below the header metadata.
+First fill out the Name column using the automatic pull down menu to select the taxon. This will automatically fill out the Code column and the Group column for you.
+Element – the type of element representing that taxon. Typical faunal elements are bones, teeth, scales, and other hard body parts. Bone and tooth elements may be specifically identified (e.g. «tibia» or even more precisely «tibia, distal, left», «M2, lower, left»). Use the pull down menu.
+Units – choose the appropriate unit that the data represent. If you have more than one unit type (e.g. Present/Absent, MNI and NISP), add a second row for that taxon and include data for the second unit type.
+Context – add if known
+Taphonomy  – add if known
+Data
+  Fill in the appropriate values for each cell, e.g., 1s or 0s if entering presence/absence data, or integer values if entering NISP or MNI
+Specimens
+  Eventually, will need to add in info about individual specimens.
+
+OK, once the main data are entered, I go back to the metadata and work on the geochronology and chronology information
 
 Importing the
 
