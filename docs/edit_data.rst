@@ -198,7 +198,7 @@ If you have more than one dated sample for this geochronology element, click the
 Chronology Tab
 ``````````````````````````````````````````````````````````````````````
 
-The Chronology tab is separate from the `Geochronology` tab.  Geochronology stores information about dated samples based on radiometric or similar geochronological methods, while Chronology stores the key metadata for a given age model.  As part of this metadata, Chronology stores all of the age controls used as constraints for an age model.  This list can include some, none, or all of the radiometric dates stored in Geochronology, and also can include non-radiometric age controls (such as a core-top in a sediment core, a biostratigraphic event of known age, etc).  This design may seem a little odd at first, but it serves the very useful function of allowing a lot of user flexibility in putting together age models. 
+The Chronology tab is separate from the `Geochronology Tab`_.  Geochronology stores information about dated samples based on radiometric or similar geochronological methods, while Chronology stores the key metadata for a given age model.  As part of this metadata, Chronology stores all of the age controls used as constraints for an age model.  This list can include some, none, or all of the radiometric dates stored in Geochronology, and also can include non-radiometric age controls (such as a core-top in a sediment core, a biostratigraphic event of known age, etc).  This design may seem a little odd at first, but it serves the very useful function of allowing a lot of user flexibility in putting together age models. 
 
 To get started, open the “Chronologies” tab and click within the white bar containing the text “Click here to add a new row”.
 
