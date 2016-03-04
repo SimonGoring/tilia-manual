@@ -198,7 +198,7 @@ If you have more than one dated sample for this geochronology element, click the
 Chronology Tab
 ``````````````````````````````````````````````````````````````````````
 
-The Chronology is separate from the `Geochronology`_.  Geochronology records dated samples, while the chronology includes undated samples (like a core-top in a sediment core) and tells the user how the age model for a record was put together.
+The Chronology tab is separate from the `Geochronology` tab.  Geochronology stores information about dated samples based on radiometric or similar geochronological methods, while Chronology stores the key metadata for a given age model.  As part of this metadata, Chronology stores all of the age controls used as constraints for an age model.  This list can include some, none, or all of the radiometric dates stored in Geochronology, and also can include non-radiometric age controls (such as a core-top in a sediment core, a biostratigraphic event of known age, etc).  This design may seem a little odd at first, but it serves the very useful function of allowing a lot of user flexibility in putting together age models. 
 
 To get started, open the “Chronologies” tab and click within the white bar containing the text “Click here to add a new row”.
 
@@ -261,10 +261,9 @@ To add the chronology from Bacon or Clam that you have already created, Go to To
 
 Once you click *OK*, navigate to the appropriate file and click okay. The chronology will be added to the Data tab.
 
-Some issues may arise in doing this:
-
-I’ve added my chronology, but the ages don’t appear:
-  This may be the result of a chronology whose depths aren’t aligned with the reported depths in the Tilia file.  In the case that
+Common Issues:
+*I’ve imported my chronology, but the ages don’t appear in the Data spreadsheet!*   
+  The usual cause of this error is a misalignment between the depths of samples in Tilia's Data spreadsheet and the depths listed in _ages.txt file outputted by Bacon or Clam.  Tilia looks for exact matches, so e.g. if the depths of samples in the Tilia file are 0.5 10.5 20.5... and the depths in the ..._ages.txt file are 1 2 3 4 5 6 .... then there are no exact matches and no ages will be imported into the Tilia file. There are a couple of possible workarounds (e.g. hand-editing the _ages.txt file) but usually the best solution is to rerun Bacon or Clam with a _depths.txt input file that contains all the depths listed in the Data spreadsheet.  Bacon or Clam will then output an _ages.txt file that should import cleanly into Tilia, suing the steps above.
 
 
 Copying an Existing Spreadsheet
