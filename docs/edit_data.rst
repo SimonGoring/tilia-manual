@@ -55,7 +55,7 @@ Contacts are **all** individuals related to the record.  This includes the indiv
 .. figure :: images/metadata_contacts.png
    :scale: 70
 
-Contacts can (and likely will) be entered as you enter data into the other tabs.  You don't need to enter information in all at once, but you will need to link to individual contacts from a number of tabs (for example the `Cronology Tab`_). If you need to enter a Contact directly, follow the directions below:
+Contacts can (and likely will) be entered as you enter data into the other tabs.  You don't need to enter information in all at once, but you will need to link to individual contacts from a number of tabs (for example the `Chronology Tab`_). If you need to enter a Contact directly, follow the directions below:
 
 First, check to confirm that contact information from the publications tab was entered correctly. Remember, contacts include the authors of the published paper you are entering, yourself (the data enterer), collector(s) and individuals associated with content including the chronology. Contact information for publicaiton authors will have been inserted when entering data in the `Publications Tab`_.
 

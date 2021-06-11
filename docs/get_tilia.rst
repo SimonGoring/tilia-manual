@@ -45,7 +45,7 @@ If you use Linux you can probably figure it out yourself.
 
 Obtaining Tilia License Keys
 ---------------------------------------------------------------------
-Different people have different access to the Neotoma database ecosystem. At this time, please `email the Neotoma team`_ in order to obtain the appropriate license key for Tilia.
+Different people have different levels of access to the Neotoma database ecosystem. At this time, please `email the Neotoma team`_ in order to obtain the appropriate license key for Tilia. If you are a steward and need steward access, please coordinate with the lead of the appropriate constituent database and they can request steward access for you.
 
 .. _email the Neotoma team : mailto:neotoma-contact@googlegroups.com?subject=Tilia%20License%20Key%20Request
 
