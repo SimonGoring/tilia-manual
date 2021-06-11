@@ -3,9 +3,16 @@ Obtaining & Installing Tilia
 
 Obtaining Tilia
 ---------------------------------------------------------------------
-Tilia can be downloaded directly from TiliaIT_ using the *Download* tab.  Once the ZIP file is downloaded it can be opened using a program such as WinRAR, 7ZIP or WinZip.  The downloaded file contains a single file *setup_tilia_X_Y_ZZZ.exe* (where the X, Y and ZZZ represent the version numbering).  This file is an executable that will lead you through the setup process.  Tilia is built for Windows, but can be installed on Macintosh Brand or Linux system using an emulator.
+Eric C. Grimm developed and improved Tilia throughout his career, and you can learn more about Tilia at his primary website. 
 
 .. _TiliaIT : http://tiliait.com
+
+However, Eric passed away in November 2020 right as the database was transitioning from a Microsoft SQL to PostgreSQL. An updated version of Tilia was in development at that time, and the Neotoma IT team released an updated beta version (v3.0.1) of Tilia that interfaces with the  PostgreSQL shortly after Eric's passing. At this time, you can download Tilia here:
+
+.. _Tilia v3.0.1 : https://drive.google.com/drive/folders/1uwElEFwc2imp_xQDOVnR1BWInCCwww8x
+
+Once the ZIP file is downloaded it can be opened using a program such as WinRAR, 7ZIP or WinZip.  The downloaded file contains a single file *setup_tilia_X_Y_ZZZ.exe* (where the X, Y and ZZZ represent the version numbering).  This file is an executable that will lead you through the setup process.  Tilia is built for Windows, but can be installed on Macintosh Brand or Linux system using an emulator.
+
 
 Installing Tilia on a Macintosh or Linux Machine
 ---------------------------------------------------------------------
@@ -34,3 +41,7 @@ Once Tilia is installed it can be run as any other program through Wine.
 Installing Tilia on a Linux Machine
 ``````````````````````````````````````````````````````````````````````
 If you use Linux you can probably figure it out yourself.
+
+Obtaining Tilia License Keys
+---------------------------------------------------------------------
+Different people have different access to the Neotoma database ecosystem. At this time, please [email the Neotoma team](mailto:neotoma-contact@googlegroups.com?subject=Tilia%20License%20Key%20Request) in order to obtain the appropriate license key for Tilia. 
