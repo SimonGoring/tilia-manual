@@ -3,13 +3,13 @@ Obtaining & Installing Tilia
 
 Obtaining Tilia
 ---------------------------------------------------------------------
-Eric C. Grimm developed and improved Tilia throughout his career, and you can learn more about Tilia at his primary website. 
+Eric C. Grimm developed and improved Tilia throughout his career, and you can learn more about Tilia at his primary TiliaIT_ website. 
 
 .. _TiliaIT : http://tiliait.com
 
-However, Eric passed away in November 2020 right as the database was transitioning from a Microsoft SQL to PostgreSQL. An updated version of Tilia was in development at that time, and the Neotoma IT team released an updated beta version (v3.0.1) of Tilia that interfaces with the  PostgreSQL shortly after Eric's passing. At this time, you can download Tilia here:
+However, Eric passed away in November 2020 right as the database was transitioning from a Microsoft SQL to PostgreSQL. An updated version of Tilia was in development at that time, and the Neotoma IT team released an updated beta version of Tilia (v3.0.1)_ that interfaces with the  PostgreSQL shortly after Eric's passing. At this time, you can download Tilia here:
 
-.. _Tilia v3.0.1 : https://drive.google.com/drive/folders/1uwElEFwc2imp_xQDOVnR1BWInCCwww8x
+.. _Tilia (v3.0.1): https://drive.google.com/drive/folders/1uwElEFwc2imp_xQDOVnR1BWInCCwww8x
 
 Once the ZIP file is downloaded it can be opened using a program such as WinRAR, 7ZIP or WinZip.  The downloaded file contains a single file *setup_tilia_X_Y_ZZZ.exe* (where the X, Y and ZZZ represent the version numbering).  This file is an executable that will lead you through the setup process.  Tilia is built for Windows, but can be installed on Macintosh Brand or Linux system using an emulator.
 
@@ -20,7 +20,7 @@ Tilia is built on a platform that requires the use of Windows.  Given its popula
 
 Installing Tilia on a Macintosh
 ``````````````````````````````````````````````````````````````````````
-*The following instructions were kindly provided by `Jonathan Nichols`_:*
+*The following instructions were kindly provided by `Jonathan Nichols`_*
 To run Tilia on an OSX machine, the following programs must be installed:
 
 * WINE_ for Darwin and OSX.
@@ -44,4 +44,5 @@ If you use Linux you can probably figure it out yourself.
 
 Obtaining Tilia License Keys
 ---------------------------------------------------------------------
-Different people have different access to the Neotoma database ecosystem. At this time, please [email the Neotoma team](mailto:neotoma-contact@googlegroups.com?subject=Tilia%20License%20Key%20Request) in order to obtain the appropriate license key for Tilia. 
+Different people have different access to the Neotoma database ecosystem. At this time, please <a href="mailto:neotoma-contact@googlegroups.com?subject=Tilia%20License%20Key%20Request"
+email the Neotoma team</a> in order to obtain the appropriate license key for Tilia. 
