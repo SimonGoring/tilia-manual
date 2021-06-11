@@ -1,120 +1,134 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Obtaining &amp; Installing Tilia &mdash; tilia_manual 0.1 documentation</title>
-    
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="tilia_manual 0.1 documentation" href="index.html" />
-    <link rel="next" title="&lt;no title&gt;" href="metadata.html" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Obtaining &amp; Installing Tilia &#8212; tilia_manual 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="An Overview of a Tilia File" href="overview.html" />
     <link rel="prev" title="Tilia Documentation" href="index.html" />
    
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body role="document">  
+  </head><body>
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="obtaining-installing-tilia">
+  <section id="obtaining-installing-tilia">
 <h1>Obtaining &amp; Installing Tilia<a class="headerlink" href="#obtaining-installing-tilia" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="obtaining-tilia">
+<section id="obtaining-tilia">
 <h2>Obtaining Tilia<a class="headerlink" href="#obtaining-tilia" title="Permalink to this headline">¶</a></h2>
-<p>Tilia can be downloaded directly from <a class="reference external" href="http://tiliait.com">TiliaIT</a> using the <em>Download</em> tab.  Once the ZIP file is downloaded it can be opened using a program such as WinRAR, 7ZIP or WinZip.  The downloaded file contains a single file <em>setup_tilia_X_Y_ZZZ.exe</em> (where the X, Y and ZZZ represent the version numbering).  This file is an executable that will lead you through the setup process.  Tilia is built for Windows, but can be installed on Macintosh Brand or Linux system using an emulator.</p>
-</div>
-<div class="section" id="installing-tilia-on-a-macintosh-or-linux-machine">
+<p>Eric C. Grimm developed and improved Tilia throughout his career, and you can learn more about Tilia at his primary <a class="reference external" href="http://tiliait.com">TiliaIT</a> website.</p>
+<p>However, Eric passed away in November 2020 right as the database was transitioning from a Microsoft SQL to PostgreSQL. An updated version of Tilia was in development at that time, and the Neotoma IT team released an updated beta version of <a class="reference external" href="https://drive.google.com/drive/folders/1uwElEFwc2imp_xQDOVnR1BWInCCwww8x">Tilia (v3.0.1)</a> that interfaces with the  PostgreSQL shortly after Eric’s passing. At this time, you can download Tilia here:</p>
+<p>Once the ZIP file is downloaded it can be opened using a program such as WinRAR, 7ZIP or WinZip.  The downloaded file contains a single file <em>setup_tilia_X_Y_ZZZ.exe</em> (where the X, Y and ZZZ represent the version numbering).  This file is an executable that will lead you through the setup process.  Tilia is built for Windows, but can be installed on Macintosh Brand or Linux system using an emulator.</p>
+</section>
+<section id="installing-tilia-on-a-macintosh-or-linux-machine">
 <h2>Installing Tilia on a Macintosh or Linux Machine<a class="headerlink" href="#installing-tilia-on-a-macintosh-or-linux-machine" title="Permalink to this headline">¶</a></h2>
 <p>Tilia is built on a platform that requires the use of Windows.  Given its popularity however, people have found solutions for using the software on multiple platforms.</p>
-<div class="section" id="installing-tilia-on-a-macintosh">
+<section id="installing-tilia-on-a-macintosh">
 <h3>Installing Tilia on a Macintosh<a class="headerlink" href="#installing-tilia-on-a-macintosh" title="Permalink to this headline">¶</a></h3>
-<p><em>The following instructions were kindly provided by `Jonathan Nichols`_:</em>
-To run Tilia on an OSX machine, the following programs must be installed:</p>
+<p>The following instructions were kindly provided by <a class="reference external" href="http://www.ldeo.columbia.edu/~jnichols/">Jonathan Nichols</a></p>
+<p>To run Tilia on an OSX machine, the following programs must be installed:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://sourceforge.net/projects/darwine/">WINE</a> for Darwin and OSX.</li>
-<li><a class="reference external" href="http://www.xquartz.org">XQuartz</a> (or X11 if you are using OSX 10.5 or older) must be installed.</li>
+<li><p><a class="reference external" href="http://sourceforge.net/projects/darwine/">WINE</a> for Darwin and OSX.</p></li>
+<li><p><a class="reference external" href="http://www.xquartz.org">XQuartz</a> (or X11 if you are using OSX 10.5 or older) must be installed.</p></li>
 </ul>
 <p>Once Wine and XQuartz (or X11) are installed and running, navigate to the “Start” menu in Wine and select “Run”</p>
 <img alt="_images/image16.png" src="_images/image16.png" />
 <p>Click “Browse” and navigate to the Tilia installer executable (see <a class="reference internal" href="#obtaining-tilia">Obtaining Tilia</a>) and then click “OK”. Hint: Your regular Mac drive is listed as drive “Z:”</p>
 <p>Once Tilia is installed it can be run as any other program through Wine.</p>
-</div>
-<div class="section" id="installing-tilia-on-a-linux-machine">
+</section>
+<section id="installing-tilia-on-a-linux-machine">
 <h3>Installing Tilia on a Linux Machine<a class="headerlink" href="#installing-tilia-on-a-linux-machine" title="Permalink to this headline">¶</a></h3>
 <p>If you use Linux you can probably figure it out yourself.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+<section id="obtaining-tilia-license-keys">
+<h2>Obtaining Tilia License Keys<a class="headerlink" href="#obtaining-tilia-license-keys" title="Permalink to this headline">¶</a></h2>
+<p>Different people have different access to the Neotoma database ecosystem. At this time, please <a class="reference external" href="mailto:neotoma-contact&#37;&#52;&#48;googlegroups&#46;com?subject=Tilia%20License%20Key%20Request">email the Neotoma team</a> in order to obtain the appropriate license key for Tilia.</p>
+</section>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Obtaining &amp; Installing Tilia</a><ul>
-<li><a class="reference internal" href="#obtaining-tilia">Obtaining Tilia</a></li>
-<li><a class="reference internal" href="#installing-tilia-on-a-macintosh-or-linux-machine">Installing Tilia on a Macintosh or Linux Machine</a><ul>
-<li><a class="reference internal" href="#installing-tilia-on-a-macintosh">Installing Tilia on a Macintosh</a></li>
-<li><a class="reference internal" href="#installing-tilia-on-a-linux-machine">Installing Tilia on a Linux Machine</a></li>
+<h1 class="logo"><a href="index.html">tilia_manual</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Obtaining &amp; Installing Tilia</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#obtaining-tilia">Obtaining Tilia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-tilia-on-a-macintosh-or-linux-machine">Installing Tilia on a Macintosh or Linux Machine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-tilia-on-a-macintosh">Installing Tilia on a Macintosh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-tilia-on-a-linux-machine">Installing Tilia on a Linux Machine</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#obtaining-tilia-license-keys">Obtaining Tilia License Keys</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">An Overview of a Tilia File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating.html">Creating a New Tilia File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_data.html">Editing Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 </ul>
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="previous chapter">Tilia Documentation</a></li>
-      <li>Next: <a href="metadata.html" title="next chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="overview.html" title="next chapter">An Overview of a Tilia File</a></li>
   </ul></li>
 </ul>
 </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/get_tilia.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -123,11 +137,11 @@ To run Tilia on an OSX machine, the following programs must be installed:</p>
       &copy;2016, Simon Goring.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/get_tilia.txt"
+      <a href="_sources/get_tilia.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
