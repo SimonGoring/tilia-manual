@@ -26,6 +26,13 @@ Taphonomy
   Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
 Groups
   Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &cetera).
+  
+.. _Lookup Table : https://tilia-manual.readthedocs.io/en/latest/edit_data.html
+
+Specimen Information
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Within the main data tab, values for each taxon and analysis unit are entered into the cells. Once a value is entered, information about individual specimens such as specimen number, repository, element type and symmetry, &cetera can be associated with the value. 
+ 
 
 The Metadata Tab
 ``````````````````````````````````````````````````````````````````````
@@ -35,50 +42,69 @@ The Metadata Tab is where you put information about the dataset that is not expl
 Site
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure :: images/metadata_tab.png
-   :scale: 70
+.. figure :: images/Tilia-Metadata-Site.png
 
    The "Site" metadata tab.
 
 Collection Unit
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure :: images/metadata_collunit.png
-   :scale: 70
+.. figure :: images/Tilia-Metadata-CollectionUnit.png
 
    The "Collection Unit" metadata tab.
 
 Dataset
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure :: images/metadata_dataset.png
-   :scale: 70
+.. figure :: images/Tilia-Metadata-Dataset.png
 
    The "Dataset" metadata tab.
 
 Geochronology
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+.. figure :: images/Tilia-Metadata-Geochronology.png
+
+	The "Geochronology" metadata tab.
+
 Chronologies
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure :: images/metadata_chronologies.png
-   :scale: 70
+.. figure :: images/Tilia-Metadata-Chronologies.png
 
    The "Chronologies" metadata tab.
 
 Lithology
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure :: images/metadata_lithology.png
-   :scale: 70
+.. figure :: images/Tilia-Metadata-Lithology.png
 
    The "Lithology" metadata tab.
 
 LOI
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure :: images/metadata_loi.png
-   :scale: 70
+.. figure :: images/Tilia-Metadata-LOI.png
 
    The "LOI" metadata tab (very different from the LOL tab).
+
+Isotopes
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. figure :: images/Tilia-Metadata-Isotopes.png
+
+   The "Isotopes" metadata tab.
+
+Contacts
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. figure :: images/Tilia-Metadata-Contacts.png
+
+   The "Contacts" metadata tab.
+
+Publications
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. figure :: images/Tilia-Metadata-Publications.png
+
+   The "Publications" metadata tab.
