@@ -3,16 +3,6 @@ Editing Your Data
 
 We are going to walk through the process of generating a Tilia record for your dataset in a way that is (at least to us) intuitive.  This is not neccessarily the way that Tilia is set up by default.  At any time you can navigate to a particular section through the sidebar.
 
-Lookup Table
----------------------------------------------------------------------
-
-Before you begin, you need to load lookup files appropriate for your data type.  This does not (yet) happen automatically. To do so, click **Tools > Variable Lookup**.  The following window will appear:
-
-.. image :: images/image04.png
-
-Then choose the tables that apply to the dataset type you are entering (you can use the Browse button if you don’t see what you need). In general, these will be auto-filled.  This enables you to provide your own tables if needed, however, custom tables may make the upload & validation process more difficult for the Data Stewards. In the above figure, you can see the “Long Form” entry.  The “Short Form” allows you to define only the Taxa Names and “Modifiers”.
-
-Because of the way lookup tables are structured, it is often difficult to include two data types at the same time, since units or taphonomies specific to both proxies may not be available simultaneously.
 
 Editing Your Metadata
 ---------------------------------------------------------------------
