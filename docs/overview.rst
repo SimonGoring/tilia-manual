@@ -5,8 +5,15 @@ The Data Tab
 ``````````````````````````````````````````````````````````````````````
 The Data Tab is the first panel you see when you create a new file.  The Data tab will be the main location for the raw data collected at a site or collection unit within a site.
 
-The Data tab contains three fixed columns that are visible immediately: “Code”, “Name” and “Group”.  The Data tab is organized in a Column/Row format, where rows represent variables and the columns are for each individual stratum or sample within the collection unit (e.g., there would be a row for *Pinus* pollen, with each column representing depths within a sediment core).
-There are additional columns (“Elements”, “Units”, “Context”, and “Taphonomy”) that are also available by selecting **Tools** > **Options** and clicking the checkboxes within the “Show Columns” section.
+The upper left cell of the Data tab indicates the type of data the spreadsheet is storing in the following rows (e.g., 'pollen', 'vertebrate fauna', 'diatoms'). You can switch the data type by clicking on the dropdown button in the cell and selecting the appropriate data type.
+
+.. figure :: images/Data_tab_overview.png
+
+   Changing data types for the subsequent rows of the spreadsheet. 
+
+The Data tab is organized in a Column/Row format, where rows represent variables and the columns are for each individual stratum or sample within the collection unit (e.g., there would be a row for *Pinus* pollen, with each column (starting with column H) representing depths within a sediment core). Additional information about the samples is stored in the first set of columns (A:G). 
+
+Three fixed columns are visible immediately when you open a new document: “Code”, “Name” and “Group”. There are additional columns (“Elements”, “Units”, “Context”, and “Taphonomy”) that are also available by selecting **Tools** > **Options** and clicking the checkboxes within the “Show Columns” section.
 
 .. figure :: images/ShowColumns.png
 
@@ -31,7 +38,11 @@ Groups
 
 Specimen Information
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Within the main data tab, values for each taxon and analysis unit are entered into the cells. Once a value is entered, information about individual specimens such as specimen number, repository, element type and symmetry, &cetera can be associated with the value. 
+The presence or absence of specimen-level data is also indicated within the main data tab by the color of the cell: pink cells have associated specimen-level data. To view or enter the specimen information, right click on the cell and select 'specimens'. 
+
+.. figure :: images/Tilia_specimen_data_entry.PNG
+
+   Analysis units and taxa that have associated specimen-level data are indicated in pink.  Right clicking on the cell and selecting 'specimens' brings up a view of the specimen-level data. 
  
 
 The Metadata Tab
