@@ -1,7 +1,77 @@
-Editing Your Data
+Editing Your Tilia Data File
 ========================================
 
-We are going to walk through the process of generating a Tilia record for your dataset in a way that is (at least to us) intuitive.  This is not neccessarily the way that Tilia is set up by default.  At any time you can navigate to a particular section through the sidebar.
+We are going to walk through the process of generating a Tilia record for your dataset in a way that is (at least to us) intuitive.  This is not neccessarily the way that Tilia is set up by default.  At any time you can navigate to a particular section through the sidebar. This set of instructions assumed that you have started a new file and loaded the appropriate lookup tables.
+
+Overview of data entry process
+---------------------------------------------------------------------
+Data entry through Tilia is an iterative process. For most datasets, it is easiest to start with the Data tab to enter the primary data (taxon names and counts at different depths/analysis units), then fill in the associated Metadata, then return to the Data tab to add contextual information. For some types of data, it is helpful to enter Specimen-level data early in the process, because they can then be easily linked to associated data such as radiocarbon dates (in the Geochronology tab) and Isotopes.
+
+
+Data Tab
+---------------------------------------------------------------------
+
+Entering New Data
+``````````````````````````````````````````````````````````````````````
+
+Adding information on the depths/analysis units
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Starting from a blank **Data** tab we can fill in some basic information about the individual analysis units from which you have counted or identified material.  In some cases, Analysis Units are stored solely as depths, and in other cases they are stored solely by Analysis Unit names (i.e., many vertebrate data have names such as "Stratum 1" or "Level 10" or "East unit"). Both types of data can be entered as well. If your data has depths then these should be entered along the very top row (Row 1), starting with Column H. If your data has Analysis Unit names, these can be entered in Row 2, starting with Column H.
+
+Quite a bit of additional information that describes the Analysis Units can be added if desired. This information is typically entered starting in Row 3. The process for entering these data is described below in "Annotating the **Data**"
+
+
+Adding taxa
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Taxon names should be entered in the 'Name' column (column B). If the appropriate lookup files have been loaded, starting to type will pull out a list of taxa and show you which taxonomic names match your entry. If the taxon is already in the database, selecting that taxon will autofill the Code (Column A) and Group (Column G) columns.
+
+Then fill in the appropriate information for Columns C-F. 
++ Double click cell and it should turn white with a down arrow on the right 
++ Clicking the arrow should show a drop down menu from which to choose the appropriate information.
++ The most important information to add here is information on the Element and Units. 
+
+Adding data values
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Once the backbone of the spreadsheet is started, values (counts, presence/absence, etc) can be entered. Note that the values will be interpreted in the context of the taxon, element, and units. Thus, you could have two rows associated with the same taxon, and one row is associated with the NISP value for that taxon at each Analysis Unit and the other row is associated with the MNI value for that taxon at each Analysis Unit.
+
+
+Copying data from an Existing Spreadsheet
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Note that data can be copied and pasted from a local spreadsheet (ie, excel or csv files) into the **Data** tab. Thus, if you have a list of taxonomic names, or a full spreadsheet of data arranged in the same format as the Tilia **Data** tab, you should be able to paste in the full dataset.
+
+First, make sure the Depths or Analysis Unit names have been added.
+If depths are available, add them (midpoints, generally) to the first row, above the relevant named analysis unit.
+
+If known, you can add the analyst too (e.g., if different people identified different strata within the deposit).  To do this, add another row below thickness using the same procedure as above, adding Metadata → Sample  Analyst.  Then, go to the cell below the first analysis unit, regular click in the cell, and add the relevant contacts from the `Contacts Tab`_.  Once you’ve added the first cell, you can then copy and paste to other analysis units.
+
+Next fill in the taxa list, starting directly below the header metadata.
+First fill out the Name column using the automatic pull down menu to select the taxon. This will automatically fill out the Code column and the Group column for you.
+
+Element
+  the type of element representing that taxon. Typical faunal elements are bones, teeth, scales, and other hard body parts. Bone and tooth elements may be specifically identified (e.g. «tibia» or even more precisely «tibia, distal, left», «M2, lower, left»). Use the pull down menu.
+Units
+  choose the appropriate unit that the data represent. If you have more than one unit type (e.g. Present/Absent, MNI and NISP), add a second row for that taxon and include data for the second unit type.
+Context
+  add if known
+Taphonomy
+  add if known
+Data
+  Fill in the appropriate values for each cell, e.g., 1s or 0s if entering presence/absence data, or integer values if entering NISP or MNI
+
+Adding Specimen Data
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Once the assemblage data have been entered, you can then add any desired information on individual specimens. Specimen data can be associated with any value for Units. 
+
+To add specimens:
++ Click once on the cell where you want to add specimen information so that the cell has a black outline on it
++ Right click and select the “Specimens” option 
++ This will open up a new popup on your screen where you will fill out the 
+specimen data 
+
+Within the Specimens popup, some information will have associated structured values available through a drop-down menu and others will require manual entry. You can double click each to find out if there is a drop down menu or if you have to manually input your information. For example, “Element” cells have a drop down list of options, while “SpecID” is manually filled in.
+
+Some cells cannot be filled in unless data has been entered into another cell first. The basic information needed is Spec ID. This is the analyst ID, however you wish to define it. This is the name that will appear in other tabs of the file (such as Geochronology or Isotopes). Any formal Specimen ID information can be added through Spec Nr and is expected to be associated with the selected Repository. As another example, “Element” must be filled in before NISP can be filled in. 
+
 
 
 Editing Your Metadata
@@ -132,7 +202,7 @@ The Geochronology tab is central to generating the chronologies for your record.
 
    The "Geochronology" metadata tab.
 
-First, at the top add the Investigator name and any notes. Then there is the option to click Depth or Analysis Unit. If the site has individually dated layers with depth and thickness data, then choose Depth. If the site is an assemblage, choose Analysis Unit. Since you have added this information into the Data tab, it should be automatically linked (at least the Analysis Unit info).
+First, at the top add the Investigator name and any notes. Then there is the option to click Depth or Analysis Unit. If the site has individually dated layers with depth and thickness data, then choose Depth. If the site is an assemblage, choose Analysis Unit. Since you have added this information into the **Data** tab, it should be automatically linked (at least the Analysis Unit info).
 Click the green + button at the bottom to add a new record, or just start typing in row 1.
 
 Method
@@ -219,7 +289,7 @@ Once the fields have been filled, click the tiny “+” sign at the bottom of t
 This adds the entered data into the Chronology tray, allowing us to associate more data with the record.
 Now we need to associate *Geochronological* data with the Chronology we’ve just created.  To begin this, we need to add the data from the `Geochronology Tab`_ to our chronology.  To do this we expand the Chronology we just created.  We do this by clicking the “+” sign at the beginning of the row (in the figure below).
 
-Once you’ve clicked the "+" button you’ll see a new spreadsheet.  By clicking into the spreadsheet you will cause new buttons to appear under the Metadata Tabs.  The buttons say “Link”, “Import” and “Export”.
+Once you’ve clicked the "+" button you’ll see a new spreadsheet.  By clicking into the spreadsheet you will cause new buttons to appear under the **Metadata** Tabs.  The buttons say “Link”, “Import” and “Export”.
 If you’ve already entered the Geochronological data into the metadata table, all you need to do is click “Import”.  A new window will appear (below).  Select the appropriate values.
 
 In general it makes sense to use the defaults unless there is a very good reason to do so.
@@ -234,49 +304,24 @@ This will save the appropriate ``csv`` file for Bacon or Clam (in this case, mak
 
 If you do use Bacon or Clam to generate your interpolated chronology then remember to copy your ``settings`` file into the Notes field.  This will allow people to replicate your results.
 
-Data Tab
+Annotating the **Data**
 ---------------------------------------------------------------------
 
-Entering New Data
-``````````````````````````````````````````````````````````````````````
+In some cases, analysts may want to add extra data that describes the Analysis Units. The most typical type of data to add is information about the ages associated with each depth (see below), but other forms of metadata can be added such as analysis unit thicknesses or sample analyst.
 
-Starting from a blank Data Tab we can fill in some basic information about the individual analysis units.  If your data has depths then these should be entered along the very top row (Row 1)
+To add, e.g., analysis unit thickness, add a blank row UNDER the Analysis Unit name (ie, in row 3). To do this, hover your mouse over cell A3, then right click in the top left cell of that row, and select Metadata → Analysis Unit → Thickness. You will see that a new row has been added, with an associated code and name for the variable. You can then proceed to enter values for analysis unit thickness starting at Column H. 
 
 Adding the Chronology
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````
 
-Once the dates are added to the Chronology table, navigate back to the Data Tab.  Here we can import the dates for the model.  There are two options.  If you want Tilia to build the model for you you can select **Tools>Chronology**.  If you’ve built the model yourself using Bacon or Clam then you can import the output file directly using **Tools > Import Chronology > Bacon/Clam**.  If you have a record for which the age model is entirely made up of directly dated objects (or absolutely dated records) where the Chronology tab sheet is equivalent to the actual depths/records in the Data sheet then it is possible to directly import the Chronology Tab Sheet using **Tools > Import Chronology > Chronologies Tabsheet**.
+Once the age model information is added to the Chronology table, navigate back to the **Data** tab.  Here we can import the dates for the model.  There are two options.  If you want Tilia to build the model for you you can select **Tools > Chronology**.  If you’ve built the model yourself using Bacon or Clam then you can import the output file directly using **Tools > Import Chronology > Bacon/Clam**.  If you have a record for which the age model is entirely made up of directly dated objects (or absolutely dated records) where the Chronology tab sheet is equivalent to the actual depths/records in the Data sheet then it is possible to directly import the Chronology Tab Sheet using **Tools > Import Chronology > Chronologies Tabsheet**.
 
 To add the chronology from Bacon or Clam that you have already created, Go to Tools > Import Chronology > Bacon/Clam.  Your Chronologies have numbers associated with them in the Chronologies Tab.  Make sure you’re using the right Chronology number.  Bacon and Clam have different options, but you should choose the right file and the age values that make the most sense to you.
 
-Once you click *OK*, navigate to the appropriate file and click okay. The chronology will be added to the Data tab.
+Once you click *OK*, navigate to the appropriate file and click okay. The chronology will be added to the **Data** tab.
 
 Common Issues:
 *I’ve imported my chronology, but the ages don’t appear in the Data spreadsheet!*   
   The usual cause of this error is a misalignment between the depths of samples in Tilia's Data spreadsheet and the depths listed in _ages.txt file outputted by Bacon or Clam.  Tilia looks for exact matches, so e.g. if the depths of samples in the Tilia file are 0.5 10.5 20.5... and the depths in the ..._ages.txt file are 1 2 3 4 5 6 .... then there are no exact matches and no ages will be imported into the Tilia file. There are a couple of possible workarounds (e.g. hand-editing the _ages.txt file) but usually the best solution is to rerun Bacon or Clam with a _depths.txt input file that contains all the depths listed in the Data spreadsheet.  Bacon or Clam will then output an _ages.txt file that should import cleanly into Tilia, suing the steps above.
 
 
-Copying an Existing Spreadsheet
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-First, add the Analysis Unit names to the row headers, row 2.
-If depths are available, add them (midpoints, generally) to the first row, above the relevant named analysis unit.
-To add thicknesses, add a blank row UNDER the Analysis Unit name.  Then right click in the top left cell of that row, and enter Metadata → Analysis Unit → Thickness
-
-If known, you can add the analyst too (e.g., if different people identified different strata within the deposit).  To do this, add another row below thickness using the same procedure as above, adding Metadata → Sample  Analyst.  Then, go to the cell below the first analysis unit, regular click in the cell, and add the relevant contacts from the `Contacts Tab`_.  Once you’ve added the first cell, you can then copy and paste to other analysis units.
-
-Next fill in the taxa list, starting directly below the header metadata.
-First fill out the Name column using the automatic pull down menu to select the taxon. This will automatically fill out the Code column and the Group column for you.
-
-Element
-  the type of element representing that taxon. Typical faunal elements are bones, teeth, scales, and other hard body parts. Bone and tooth elements may be specifically identified (e.g. «tibia» or even more precisely «tibia, distal, left», «M2, lower, left»). Use the pull down menu.
-Units
-  choose the appropriate unit that the data represent. If you have more than one unit type (e.g. Present/Absent, MNI and NISP), add a second row for that taxon and include data for the second unit type.
-Context
-  add if known
-Taphonomy
-  add if known
-Data
-  Fill in the appropriate values for each cell, e.g., 1s or 0s if entering presence/absence data, or integer values if entering NISP or MNI
-Specimens
-  Eventually, will need to add in info about individual specimens.
