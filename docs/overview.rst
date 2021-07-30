@@ -5,11 +5,7 @@ The Data Tab
 ``````````````````````````````````````````````````````````````````````
 The Data Tab is the first panel you see when you create a new file.  The Data tab will be the main location for the raw data collected at a site or collection unit within a site.
 
-The upper left cell of the Data tab indicates the type of data the spreadsheet is storing in the following rows (e.g., 'pollen', 'vertebrate fauna', 'diatoms'). You can switch the data type by clicking on the dropdown button in the cell and selecting the appropriate data type.
-
-.. figure :: images/Data_tab_overview.png
-
-   Changing data types for the subsequent rows of the spreadsheet. 
+The upper left cell of the Data tab indicates the type of data the spreadsheet is storing in the following rows (e.g., 'pollen', 'vertebrate fauna', 'diatoms'). 
 
 The Data tab is organized in a Column/Row format, where rows represent variables and the columns are for each individual stratum or sample within the collection unit (e.g., there would be a row for *Pinus* pollen, with each column (starting with column H) representing depths within a sediment core). Additional information about the samples is stored in the first set of columns (A:G). 
 
@@ -119,3 +115,19 @@ Publications
 .. figure :: images/Tilia-Metadata-Publications.png
 
    The "Publications" metadata tab.
+
+
+
+Navigating Tilia
+``````````````````````````````````````````````````````````````````````
+While using Tilia there are some features that are found across the data input & manipulation process.  These include editing tools, the menu bar & menu icons, and formatting tools.
+
+Menu Bar
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+The menu bar is fixed.  It doesn't change, although options within individual (meta)data tabs can make options within individual menus selectable or not.
+
+File
+  Standard options:  Open, New, Close, Neotoma, Save, Save As, Export
+Edit
+  Standard options:  Undo, Cut, Copy, Copy All, Paste, Clear All, Format Cells, Formula to Value, Sort, Toggle Rare
+
