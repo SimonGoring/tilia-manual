@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Tilia Data Entry &#8212; tilia_manual 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Editing Your Tilia Data File" href="edit_data.html" />
+    <link rel="prev" title="An Overview of a Tilia File" href="overview.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started-with-tilia-data-entry">
+<h1>Getting Started with Tilia Data Entry<a class="headerlink" href="#getting-started-with-tilia-data-entry" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="creating-a-new-tilia-file">
+<h2>Creating a New Tilia File<a class="headerlink" href="#creating-a-new-tilia-file" title="Permalink to this headline">¶</a></h2>
+<p>Open up the Tilia program and open a new file (<strong>File</strong> &gt; <strong>New</strong>).  A new window will open up, with two tabs at the top (Data &amp; Metadata), several columns (Code, Name and Group) and a single header cell, by default <strong>Pollen</strong>.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/image01.png"><img alt="_images/image01.png" src="_images/image01.png" style="width: 507.49999999999994px; height: 435.4px;" /></a>
+<p class="caption"><span class="caption-text">A brand new empty data file.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The cell that contains the term <strong>Pollen</strong> can be modified to represent one of the other dataset types that Neotoma supports.  To switch dataset types, click on the dropdown arrow to the right within the cell and select the appropriate data type.</p>
+<div class="figure align-default" id="id2">
+<img alt="_images/Data_tab_overview.png" src="_images/Data_tab_overview.png" />
+<p class="caption"><span class="caption-text">Changing data types for the subsequent rows of the spreadsheet.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once you have selected the dataset type, it’s possible to then load the lookup files that Tilia uses to standardize taxonomy and other associated sample information.</p>
+</div>
+<div class="section" id="lookup-files">
+<h2>Lookup Files<a class="headerlink" href="#lookup-files" title="Permalink to this headline">¶</a></h2>
+<p>Tilia uses a series of lookup files that contain the structured variable entries available for different dataset types (taxa, elements, units, etc), depositional environments, geopolitical units, etc. Upon installation of Tilia, these lookup files will be downloaded to your local machine, and so every time you work with Tilia you need to ‘point’ Tilia to the appropriate lookup files for the datasets you are working with.</p>
+<p>To load the lookup files, click <strong>Tools &gt; Variable Lookup</strong>.  The following window will appear:</p>
+<img alt="_images/VariableLookupFiles.png" src="_images/VariableLookupFiles.png" />
+<p>Then choose the tables that apply to the dataset type you are entering (you can use the Browse button if you don’t see what you need). In general, these will be auto-filled.  This enables you to provide your own tables if needed, however, custom tables may make the upload &amp; validation process more difficult for the Data Stewards. In the above figure, you can see the “Long Form” entry.  The “Short Form” allows you to define only the Taxa Names and “Modifiers”. For the default lookup tables, there is no difference between the set of lookup files that are loaded with the “Short Form” vs “Long Form” entries.</p>
+<p>Because of the way lookup tables are structured, it is often difficult to include two data types at the same time, since units or taphonomies specific to both proxies may not be available simultaneously.</p>
+<p>A recommended practice is to periodically refresh the lookup files on your local machine to match those available through the database. This is particularly important in cases where new taxa are being added (for example, if a group is making a new push to enter data from a new region, and subsequently entering new taxa). To do this, click <strong>Neotoma &gt; Lookup</strong> and then select the specific lookup file you would like to refresh.</p>
+<img alt="_images/LookupFiles_database_refresh.png" src="_images/LookupFiles_database_refresh.png" />
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">tilia_manual</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="get_tilia.html">Obtaining &amp; Installing Tilia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">An Overview of a Tilia File</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started with Tilia Data Entry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-new-tilia-file">Creating a New Tilia File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lookup-files">Lookup Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="edit_data.html">Editing Your Tilia Data File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="overview.html" title="previous chapter">An Overview of a Tilia File</a></li>
+      <li>Next: <a href="edit_data.html" title="next chapter">Editing Your Tilia Data File</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Simon Goring.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/creating.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

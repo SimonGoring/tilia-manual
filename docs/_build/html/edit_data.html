@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editing Your Tilia Data File &#8212; tilia_manual 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tools" href="tools.html" />
+    <link rel="prev" title="Getting Started with Tilia Data Entry" href="creating.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="editing-your-tilia-data-file">
+<h1>Editing Your Tilia Data File<a class="headerlink" href="#editing-your-tilia-data-file" title="Permalink to this headline">¶</a></h1>
+<p>We are going to walk through the process of generating a Tilia record for your dataset in a way that is (at least to us) intuitive.  This is not neccessarily the way that Tilia is set up by default.  At any time you can navigate to a particular section through the sidebar. This set of instructions assumed that you have started a new file and loaded the appropriate lookup tables.</p>
+<div class="section" id="overview-of-data-entry-process">
+<h2>Overview of data entry process<a class="headerlink" href="#overview-of-data-entry-process" title="Permalink to this headline">¶</a></h2>
+<p>Data entry through Tilia is an iterative process. For most datasets, it is easiest to start with the Data tab to enter the primary data (taxon names and counts at different depths/analysis units), then fill in the associated Metadata, then return to the Data tab to add contextual information. For some types of data, it is helpful to enter Specimen-level data early in the process, because they can then be easily linked to associated data such as radiocarbon dates (in the Geochronology tab) and Isotopes.</p>
+</div>
+<div class="section" id="data-tab">
+<h2>Data Tab<a class="headerlink" href="#data-tab" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="entering-new-data">
+<h3>Entering New Data<a class="headerlink" href="#entering-new-data" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="adding-information-on-the-depths-analysis-units">
+<h4>Adding information on the depths/analysis units<a class="headerlink" href="#adding-information-on-the-depths-analysis-units" title="Permalink to this headline">¶</a></h4>
+<p>Starting from a blank <strong>Data</strong> tab we can fill in some basic information about the individual analysis units from which you have counted or identified material.  In some cases, Analysis Units are stored solely as depths, and in other cases they are stored solely by Analysis Unit names (i.e., many vertebrate data have names such as “Stratum 1” or “Level 10” or “East unit”). Both types of data can be entered as well. If your data has depths then these should be entered along the very top row (Row 1), starting with Column H. If your data has Analysis Unit names, these can be entered in Row 2, starting with Column H.</p>
+<p>Quite a bit of additional information that describes the Analysis Units can be added if desired. This information is typically entered starting in Row 3. The process for entering these data is described below in “Annotating the <strong>Data</strong>”</p>
+</div>
+<div class="section" id="adding-taxa">
+<h4>Adding taxa<a class="headerlink" href="#adding-taxa" title="Permalink to this headline">¶</a></h4>
+<p>Taxon names should be entered in the ‘Name’ column (column B). If the appropriate lookup files have been loaded, starting to type will pull out a list of taxa and show you which taxonomic names match your entry. If the taxon is already in the database, selecting that taxon will autofill the Code (Column A) and Group (Column G) columns.</p>
+<p>Then fill in the appropriate information for Columns C-F.
++ Double click cell and it should turn white with a down arrow on the right
++ Clicking the arrow should show a drop down menu from which to choose the appropriate information.
++ The most important information to add here is information on the Element and Units.</p>
+</div>
+<div class="section" id="adding-data-values">
+<h4>Adding data values<a class="headerlink" href="#adding-data-values" title="Permalink to this headline">¶</a></h4>
+<p>Once the backbone of the spreadsheet is started, values (counts, presence/absence, etc) can be entered. Note that the values will be interpreted in the context of the taxon, element, and units. Thus, you could have two rows associated with the same taxon, and one row is associated with the NISP value for that taxon at each Analysis Unit and the other row is associated with the MNI value for that taxon at each Analysis Unit.</p>
+</div>
+<div class="section" id="copying-data-from-an-existing-spreadsheet">
+<h4>Copying data from an Existing Spreadsheet<a class="headerlink" href="#copying-data-from-an-existing-spreadsheet" title="Permalink to this headline">¶</a></h4>
+<p>Note that data can be copied and pasted from a local spreadsheet (ie, excel or csv files) into the <strong>Data</strong> tab. Thus, if you have a list of taxonomic names, or a full spreadsheet of data arranged in the same format as the Tilia <strong>Data</strong> tab, you should be able to paste in the full dataset.</p>
+<p>First, make sure the Depths or Analysis Unit names have been added.
+If depths are available, add them (midpoints, generally) to the first row, above the relevant named analysis unit.</p>
+<p>If known, you can add the analyst too (e.g., if different people identified different strata within the deposit).  To do this, add another row below thickness using the same procedure as above, adding Metadata → Sample  Analyst.  Then, go to the cell below the first analysis unit, regular click in the cell, and add the relevant contacts from the <a class="reference internal" href="#contacts-tab">Contacts Tab</a>.  Once you’ve added the first cell, you can then copy and paste to other analysis units.</p>
+<p>Next fill in the taxa list, starting directly below the header metadata.
+First fill out the Name column using the automatic pull down menu to select the taxon. This will automatically fill out the Code column and the Group column for you.</p>
+<dl class="simple">
+<dt>Element</dt><dd><p>the type of element representing that taxon. Typical faunal elements are bones, teeth, scales, and other hard body parts. Bone and tooth elements may be specifically identified (e.g. «tibia» or even more precisely «tibia, distal, left», «M2, lower, left»). Use the pull down menu.</p>
+</dd>
+<dt>Units</dt><dd><p>choose the appropriate unit that the data represent. If you have more than one unit type (e.g. Present/Absent, MNI and NISP), add a second row for that taxon and include data for the second unit type.</p>
+</dd>
+<dt>Context</dt><dd><p>add if known</p>
+</dd>
+<dt>Taphonomy</dt><dd><p>add if known</p>
+</dd>
+<dt>Data</dt><dd><p>Fill in the appropriate values for each cell, e.g., 1s or 0s if entering presence/absence data, or integer values if entering NISP or MNI</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="adding-specimen-data">
+<h4>Adding Specimen Data<a class="headerlink" href="#adding-specimen-data" title="Permalink to this headline">¶</a></h4>
+<p>Once the assemblage data have been entered, you can then add any desired information on individual specimens. Specimen data can be associated with any value for Units.</p>
+<p>To add specimens:
++ Click once on the cell where you want to add specimen information so that the cell has a black outline on it
++ Right click and select the “Specimens” option
++ This will open up a new popup on your screen where you will fill out the
+specimen data</p>
+<p>Within the Specimens popup, some information will have associated structured values available through a drop-down menu and others will require manual entry. You can double click each to find out if there is a drop down menu or if you have to manually input your information. For example, “Element” cells have a drop down list of options, while “SpecID” is manually filled in.</p>
+<p>Some cells cannot be filled in unless data has been entered into another cell first. The basic information needed is Spec ID. This is the analyst ID, however you wish to define it. This is the name that will appear in other tabs of the file (such as Geochronology or Isotopes). Any formal Specimen ID information can be added through Spec Nr and is expected to be associated with the selected Repository. As another example, “Element” must be filled in before NISP can be filled in.</p>
+</div>
+</div>
+</div>
+<div class="section" id="editing-your-metadata">
+<h2>Editing Your Metadata<a class="headerlink" href="#editing-your-metadata" title="Permalink to this headline">¶</a></h2>
+<p>In general, it’s easiest to start editing your collection information starting with the <strong>Metadata</strong> tab.  If you happen to be entering multiple datasets for the same site (or study) you can enter the <strong>Metadata</strong>, and then save the file (without entering any data) so it serves as a template for each subsequent dataset.  This helps speed up the process of generating Tilia files, particularly for large studies or multiproxy analyses.</p>
+<img alt="_images/metadata_tabs.png" src="_images/metadata_tabs.png" />
+<p>Metadata editing requires information to be entered on the following subtabs:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#site-tab">Site Tab</a></p></li>
+<li><p><a class="reference internal" href="#collection-unit-tab">Collection Unit Tab</a></p></li>
+<li><p><a class="reference internal" href="#dataset-tab">Dataset Tab</a></p></li>
+<li><p><a class="reference internal" href="#geochronology-tab">Geochronology Tab</a></p></li>
+<li><p><a href="#id2"><span class="problematic" id="id3">`Chronologies Tab`_</span></a></p></li>
+<li><p><a href="#id4"><span class="problematic" id="id5">`Lithology Tab`_</span></a></p></li>
+<li><p><a href="#id6"><span class="problematic" id="id7">`LOI Tab`_</span></a></p></li>
+<li><p><a class="reference internal" href="#publications-tab">Publications Tab</a></p></li>
+<li><p><a class="reference internal" href="#contacts-tab">Contacts Tab</a></p></li>
+</ul>
+<p>These tabs are generally arranged in the order of importance as far as a data user might be concerned, but for data entry it often makes sense to start by adding publication &amp; contact information first.  This information is used throughout the Tilia file, so it makes sense to enter it first.  From here, the rest of the information can be added in any order you wish (and you can navigate to them using the sidebar, or here).  For complex records, where you might find yourself writing multiple Tilia files, <em>e.g.</em>, when you have multiple collection units or datasets from an individual site, it makes sense to fill in the Publication, Contacts &amp; Site data and save the file as a template.  If you have common Chronology information across datasets (for example, a pollen &amp; ostrocode record), then fill in those fields and save the file as a template.  This is why it is often helpful to fill in the Metadata first.</p>
+<div class="section" id="publications-tab">
+<h3>Publications Tab<a class="headerlink" href="#publications-tab" title="Permalink to this headline">¶</a></h3>
+<p>The publications tab is where publication data associated with the record will be stored.  This data goes into Neotoma (and may already be stored in Neotoma) as part of the record, but is also stored apart from the collection record.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/metadata_publications.png"><img alt="_images/metadata_publications.png" src="_images/metadata_publications.png" style="width: 569.0999999999999px; height: 435.4px;" /></a>
+</div>
+<p>To add a new record click <strong>New</strong>. Then click on the packrat to check if the publication already exists in the Neotoma database. The easiest way to do this is enter in the author’s last name as a wildcard search. If an appropriate reference shows up, click the reference and then click <strong>Use</strong>. If not, click <strong>Cancel</strong>. Choose whether the publication is a journal, book chapter, etc. Then fill in the appropriate fields. Filling in author’s data will also enter data into contacts as well.</p>
+<p>Note that if you are adding records via Tilia on a Mac, Tilia freezes when entering new publications.  So save often, and perhaps do this step from a PC.</p>
+</div>
+<div class="section" id="contacts-tab">
+<h3>Contacts Tab<a class="headerlink" href="#contacts-tab" title="Permalink to this headline">¶</a></h3>
+<p>Contacts are <strong>all</strong> individuals related to the record.  This includes the individuals who produced &amp; published the record, but also the individuals who assisted in the preparation of chronologies, or in the submission of the data.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/metadata_contacts.png"><img alt="_images/metadata_contacts.png" src="_images/metadata_contacts.png" style="width: 569.0999999999999px; height: 435.4px;" /></a>
+</div>
+<p>Contacts can (and likely will) be entered as you enter data into the other tabs.  You don’t need to enter information in all at once, but you will need to link to individual contacts from a number of tabs (for example the <a class="reference internal" href="#chronology-tab">Chronology Tab</a>). If you need to enter a Contact directly, follow the directions below:</p>
+<p>First, check to confirm that contact information from the publications tab was entered correctly. Remember, contacts include the authors of the published paper you are entering, yourself (the data enterer), collector(s) and individuals associated with content including the chronology. Contact information for publicaiton authors will have been inserted when entering data in the <a class="reference internal" href="#publications-tab">Publications Tab</a>.</p>
+<p>To add a new contact click the green <strong>+</strong> at the bottom of the window.  This should create an empty contact field.  Neotoma contains a number of pre-existing contacts, so it’s always best-practice to first search for an individual first.  To do this, enter the individual’s family name and then click the <em>Neotoma</em> icon at the end of the field. A new screen will appear. In the search box enter the family name and click the binoculars. If the correct contact is found and all data is up-to-date, click Match and it will be added to the Contacts Tab. If the contact info needs to be updated, click the blue arrow and add any additional information. Then click Update Contact.</p>
+<p>If there is not a contact in the database, press OK and then press the blue arrow to transfer the family name from the Tilia Contact to the Neotoma Contact. Fill in any data you can in the Neotoma Contact. Leading initials are the initials of the first and middle names with a period after them. Phone numbers should be entered in the following format: +1-XXX-XXX-XXXX. When all data is entered click Upload Contact.</p>
+</div>
+<div class="section" id="site-tab">
+<h3>Site Tab<a class="headerlink" href="#site-tab" title="Permalink to this headline">¶</a></h3>
+<p>The Site Tab provides important information about the site and geographic context of the collection you are submitting.  Be sure to be as accurate as possible.  If you don’t have accurate Latitude/Longitude available it is possible to obtain these values using the Google Maps button, which will provide a map based interface with which to select a location.</p>
+<dl class="simple">
+<dt>Site Name</dt><dd><p>Use the common name or most popular name used from the publication. Check Neotoma to make sure this name doesn’t already exist.</p>
+</dd>
+<dt>First Geopolitical Division</dt><dd><p>Country the site is in.</p>
+</dd>
+<dt>Second Geopolitical Division</dt><dd><p>State the site is in.</p>
+</dd>
+<dt>Third Geopolitical Division</dt><dd><p>County the site is in.</p>
+</dd>
+<dt>Administrative Unit</dt><dd><p>Site is in private, state, federal, etc. land.</p>
+</dd>
+<dt>Latitude/Longitude</dt><dd><p>For exact locations, click “Point”. Enter in latitude and longitude. You will have the option to enter in either the decimal, degree or combination of decimal and degree. Enter data as decimals. Click the “Fuzzy” option if you don’t want the exact location of the site made publicly available and choose the radius of the range. If the general locality is unclear, click “Box” and fill in the four coordinate points. Hit OK. To add a bounding box directly from map view, click the google maps icon. A new tab named “Site Locator” will open. Select the “Box” button and N, E, S, W orientations will appear. Select one of the orientation buttons at a time, and click around the pin dropped on the map,  to create the perimeter of the bounding box. Doing so will set the north and south latitudes equal and the east and west longitudes equal.</p>
+</dd>
+<dt>Site Description</dt><dd><p>Enter in any additional information that describes the general description of the location.</p>
+</dd>
+<dt>Site Notes</dt><dd><p>Enter in any additional notes about the locality that may clear up any confusion, such as abbreviations, or changes in the site’s historical naming.  Many lakes (for example) have unique identifiers as part of their management by local or regional authorities.  These, along with the latitude and longitude can help clarify uncertain naming.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="collection-unit-tab">
+<h3>Collection Unit Tab<a class="headerlink" href="#collection-unit-tab" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Handle</dt><dd><p>Create a unique handle name in all caps. This should be 4-10 letters long.</p>
+</dd>
+<dt>Collection Unit Type</dt><dd><p>This is the type of collection you are recording. For mammals, the most common choices will be Excavation, Isolated Specimen, Animal Midden, Surface Float, Midden.  For pollen you might select “Core” or “Modern”</p>
+</dd>
+<dt>Collection Unit Name</dt><dd><p>If there are multiple collections from the same locality it is important to identify them uniquely. The name should be descriptive of the particular collection (e.g. collection number).</p>
+</dd>
+<dt>Collection Device/Location in Site</dt><dd><p>These fields are for collections that use particular field techniques, for example coring devices or other extractive tools.</p>
+</dd>
+<dt>Collectors</dt><dd><p>If you have entered these individuals from the <a class="reference internal" href="#contacts-tab">Contacts Tab</a> then you will be able to select the individuals from the dropdown menu.  If an individual is not selected then navigate to the Contacts Tab to add them.  It is best to add all individuals involved in the collection, not just the individuals listed in associated publications.</p>
+</dd>
+<dt>Date Collected</dt><dd><p>Record the most accurate date provided. If only the year is known, use January 1st. If only the month and year are known, use the 1st.</p>
+</dd>
+<dt>Depositional Environment</dt><dd><p>This will most likely be under terrestrial, so click the arrow next to terrestrial to get more options and search and then click on the appropriate subcategory to get more options.</p>
+</dd>
+<dt>Substrate</dt><dd><p>If known use the arrows to get more options and click the appropriate category.</p>
+</dd>
+<dt>Collection Unit Notes</dt><dd><p>Any additional information about this specific collection that would be useful to other researchers. (e.g. notes on how the unit was collected, when the unit was collected, etc.)</p>
+</dd>
+<dt>Slope Angle</dt><dd><p>Can be obtained in the field.  If unknown then leave the field blank.</p>
+</dd>
+<dt>Slope Aspect</dt><dd><p>Can be obtained in the field.  If unknown then leave the field blank.</p>
+</dd>
+<dt>Water Depth</dt><dd><p>Can be obtained in the field.  If unknown then leave the field blank.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="dataset-tab">
+<h3>Dataset Tab<a class="headerlink" href="#dataset-tab" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Dataset Type</dt><dd><p>Vertebrate fauna.</p>
+</dd>
+<dt>Dataset Name</dt><dd><p>Unique name to this faunal list (not always necessary to fill out).</p>
+</dd>
+<dt>Investigators</dt><dd><p>Who is responsible for the dataset, often but not always the author(s) of the published paper. This information should be available in the <a class="reference internal" href="#contacts-tab">Contacts Tab</a> edited earlier.</p>
+</dd>
+<dt>Publications</dt><dd><p>Full publication record. Choose the appropriate publications associated with this locality. In general these should have been entered as part of data entry in the <a class="reference internal" href="#publications-tab">Publications Tab</a>.  If they have not been, navigate to the Publications Tab and enter this information.</p>
+</dd>
+<dt>Repository</dt><dd><p>The museum or institution that houses the collection.  If there are repositories that are not currently listed in the drop-down menu contact the Neotoma Paleoecological Database.</p>
+</dd>
+<dt>Dataset Notes</dt><dd><p>Any additional notes regarding the dataset, including the locality number for the repository institution (e.g. UCMP V35864).</p>
+</dd>
+<dt>Data Processors</dt><dd><p>The person who enters the data into the database.</p>
+</dd>
+<dt>Spatial Extent</dt><dd><p>Don’t worry about this box, it’s mainly relevant to aggregate dataset. But if you want to add something, for most cases click Single Stratigraphic. Unclick box if the top sample is not modern surface sample.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="geochronology-tab">
+<h3>Geochronology Tab<a class="headerlink" href="#geochronology-tab" title="Permalink to this headline">¶</a></h3>
+<p>The Geochronology tab is central to generating the chronologies for your record.  It becomes linked to the <a class="reference internal" href="#contacts-tab">Contacts Tab</a> and to the <a class="reference internal" href="#chronology-tab">Chronology Tab</a>.  The tab contains all geochronological records used for chronology construction.  In pracitice most Neotoma records include geochronological data, but this is not always the case.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/metadata_geochronology.png"><img alt="_images/metadata_geochronology.png" src="_images/metadata_geochronology.png" style="width: 507.49999999999994px; height: 435.4px;" /></a>
+<p class="caption"><span class="caption-text">The “Geochronology” metadata tab.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>First, at the top add the Investigator name and any notes. Then there is the option to click Depth or Analysis Unit. If the site has individually dated layers with depth and thickness data, then choose Depth. If the site is an assemblage, choose Analysis Unit. Since you have added this information into the <strong>Data</strong> tab, it should be automatically linked (at least the Analysis Unit info).
+Click the green + button at the bottom to add a new record, or just start typing in row 1.</p>
+<dl class="simple">
+<dt>Method</dt><dd><p>Use the drop down menu to choose the appropriate dating method. This will be Carbon-14 in the majority of cases.</p>
+</dd>
+<dt>Age Units</dt><dd><p>Use the drop down menu.</p>
+</dd>
+<dt>Depth</dt><dd><p>Depth of the unit that is dated. Optional depth of the Analysis Unit in cm. Depths will typically be designated for Analysis Units from cores and for Analysis Units excavated in arbitrary (e.g. 10 cm) levels.</p>
+</dd>
+<dt>Thickness</dt><dd><p>The thickness of the dated unit.</p>
+</dd>
+<dt>Analysis Unit</dt><dd><p>This will most likely be an assemblage.</p>
+</dd>
+<dt>Lab Number</dt><dd><p>The lab number of that sample.</p>
+</dd>
+<dt>Age</dt><dd><p>The raw age of the sample.</p>
+</dd>
+<dt>SD</dt><dd><p>The standard deviation of the raw age.</p>
+</dd>
+<dt>Params</dt><dd><p>Click on the empty cell and a drop down box will appear. Click in the cell to the right of Methods and choose a dating method (e.g. accelerator mass spectrometry).</p>
+</dd>
+<dt>Material Dated</dt><dd><p>What kind of material was dated (free-form text entry)</p>
+</dd>
+<dt>Publication</dt><dd><p>Choose the publication from the drop down menu. (This should appear after entering the contact information.)</p>
+</dd>
+</dl>
+<p>Click the green Check mark to post your edits once you’re done.  The row you’ve just edited will get pushed down below the header.  You’re not done quite yet.  There’s still more information to add.</p>
+<p>Once the record gets added to the Geochronology for the collection, you can add more information to the record.  To do this, click the “+” tab at the front of the row. A sub-row will appear.</p>
+<dl class="simple">
+<dt>ID</dt><dd><p>This will fill in automatically. Leave it blank.</p>
+</dd>
+<dt>Taxon</dt><dd><p>The taxon name for organic elements.</p>
+</dd>
+<dt>Element</dt><dd><p>Use the pull down menu to select the element that was dated.  This is defined in part by the <a href="#id8"><span class="problematic" id="id9">`Lookup Table`_</span></a> you’ve decided to use.</p>
+</dd>
+<dt>Fraction</dt><dd><p>Use the pull down menu to select how the element/specimen was prepped for dating.  There are a pre-defined set of terms for use, including “Unknown”, but you can also add your own terms if the available terms aren’t appropriate.</p>
+</dd>
+<dt>Cal Age Older/Younger</dt><dd><p>These are the calibrated dates for the samples.  You have two options here:</p>
+<ol class="arabic simple">
+<li><p>Enter the calibrated ages by hand if they are provided in the paper (or you’re handy with an Intcal table)</p></li>
+<li><p>Calibrate ages using Tilia. To do this, click <strong>Tools</strong> in the menu bar and then <strong>Calibrate</strong>. In the new menu put in the age of the sample and the standard deviation and press <strong>Go</strong>. This will automatically provide an older and younger calibrated age.</p></li>
+</ol>
+</dd>
+<dt>Cal Curve</dt><dd><p>This is the calibration curve used to generate the calibrated dates.  If you used Tilia to calculate the date this will be Intcal13. If you used something else to calibrate the age (or if it was provided from a publication), choose the appropriate calibration curve from the drop down menu.</p>
+</dd>
+<dt>Cal Program</dt><dd><p>Choose the calibration program that was used to generate the calibrated date.</p>
+</dd>
+</dl>
+<p>Click the green check at the bottom to post the changes.</p>
+<p>If you have more than one dated sample for this geochronology element, click the green + at the bottom of the page and add a second record. Continue process until all samples are recorded.</p>
+</div>
+<div class="section" id="chronology-tab">
+<h3>Chronology Tab<a class="headerlink" href="#chronology-tab" title="Permalink to this headline">¶</a></h3>
+<p>The Chronology tab is separate from the <a class="reference internal" href="#geochronology-tab">Geochronology Tab</a>.  Geochronology stores information about dated samples based on radiometric or similar geochronological methods, while Chronology stores the key metadata for a given age model.  As part of this metadata, Chronology stores all of the age controls used as constraints for an age model.  This list can include some, none, or all of the radiometric dates stored in Geochronology, and also can include non-radiometric age controls (such as a core-top in a sediment core, a biostratigraphic event of known age, etc).  This design may seem a little odd at first, but it serves the very useful function of allowing a lot of user flexibility in putting together age models.</p>
+<p>To get started, open the “Chronologies” tab and click within the white bar containing the text “Click here to add a new row”.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/image17.png"><img alt="_images/image17.png" src="_images/image17.png" style="width: 417.2px; height: 98.69999999999999px;" /></a>
+</div>
+<p>You will see that the solid bar becomes divided into cells when you click.  For each cell fill in the appropriate information:</p>
+<dl class="simple">
+<dt>Name</dt><dd><p>A name for the chronology.  Give the Chronology a descriptive name (it’s a good rule of thumb not to just use “linear” or “Bacon” since you might make multiple models using the same method).</p>
+</dd>
+<dt>Age Units</dt><dd><p>The chronology age units. This is a drop-down selection &amp; does not permit multiple selections.</p>
+</dd>
+<dt>Default</dt><dd><p>If you have only one model click the “Default” box.  Otherwise, if you have multiple models, decide which model will be the default.  This decision is important.  Once the data goes up to Neotoma the default model will be the one used in searches and to display the data.  <em>Only one record can be the Default.</em></p>
+</dd>
+<dt>Age Model</dt><dd><p>The “Age Model” cell is where you will describe the model used, for example “clam - linear”.</p>
+</dd>
+<dt>Older/Younger Bound</dt><dd><p>The oldest &amp; youngest ages of the model (used for searching).  Be careful here.  In a bootstrapped or Bayesian model it is possible to get estimates that are well beyond the range of acceptable values, particularly if you extrapolate below dated material.  Generally, the protocol is that the Older Bound is rounded up to the nearest 10 years and the Younger Bound is rounded down, e.g. if the sample age bounds are -44 to 10773, the Older Bound would be 10780 and the Younger Bound would be -50.</p>
+</dd>
+<dt>Preparers</dt><dd><p>These are obtained from the <a class="reference internal" href="#contacts-tab">Contacts Tab</a> list.  If the Preparer is not already in that list then it is best to fill them in and then continue with the chronology tab. (NOTE: read below first)</p>
+</dd>
+<dt>Date Prepared</dt><dd><p>When did you generate the age model?  This drop down menu provides a calendar, which is a nice touch.</p>
+</dd>
+<dt>Notes</dt><dd><p>For more complex models including Bacon it is standard protocol to copy the settings into this field.  Otherwise this is a “free-form” cell.</p>
+</dd>
+</dl>
+<p>Once the fields have been filled, click the tiny “+” sign at the bottom of the window.</p>
+<p>This adds the entered data into the Chronology tray, allowing us to associate more data with the record.
+Now we need to associate <em>Geochronological</em> data with the Chronology we’ve just created.  To begin this, we need to add the data from the <a class="reference internal" href="#geochronology-tab">Geochronology Tab</a> to our chronology.  To do this we expand the Chronology we just created.  We do this by clicking the “+” sign at the beginning of the row (in the figure below).</p>
+<p>Once you’ve clicked the “+” button you’ll see a new spreadsheet.  By clicking into the spreadsheet you will cause new buttons to appear under the <strong>Metadata</strong> Tabs.  The buttons say “Link”, “Import” and “Export”.
+If you’ve already entered the Geochronological data into the metadata table, all you need to do is click “Import”.  A new window will appear (below).  Select the appropriate values.</p>
+<p>In general it makes sense to use the defaults unless there is a very good reason to do so.</p>
+<p>At this point you can enter any extra (non-geochron) dates that you may have used in generating your age model. The idea here is that this table will reflect the input data used to generate your age model.  For example, to add a “Core Top” date enter data in the top row, and then select <strong>Age Basis &gt; “Stratigraphic” &gt; Core Top</strong>.  You’ll see a number of options under these fields.</p>
+<p>In cases where you are being proactive (congratulations!) and entering your data before you’ve built your age model, you may have enough information to construct a proper chronology, which allows you to estimate the ages of undated depths.  If you want to use Bacon or Clam to build your chronology then you can click the <strong>Export</strong> button at the top of the Chronologies worksheet.</p>
+<img alt="_images/export_bacon.png" src="_images/export_bacon.png" />
+<p>This will save the appropriate <code class="docutils literal notranslate"><span class="pre">csv</span></code> file for Bacon or Clam (in this case, make sure you have dates entered in the <a class="reference internal" href="#data-tab">Data Tab</a>).  You can then build your age model using R and import the age model back into your record (discussed in the <a class="reference internal" href="#data-tab">Data Tab</a> section).</p>
+<p>If you do use Bacon or Clam to generate your interpolated chronology then remember to copy your <code class="docutils literal notranslate"><span class="pre">settings</span></code> file into the Notes field.  This will allow people to replicate your results.</p>
+</div>
+</div>
+<div class="section" id="annotating-the-data">
+<h2>Annotating the <strong>Data</strong><a class="headerlink" href="#annotating-the-data" title="Permalink to this headline">¶</a></h2>
+<p>In some cases, analysts may want to add extra data that describes the Analysis Units. The most typical type of data to add is information about the ages associated with each depth (see below), but other forms of metadata can be added such as analysis unit thicknesses or sample analyst.</p>
+<p>To add, e.g., analysis unit thickness, add a blank row UNDER the Analysis Unit name (ie, in row 3). To do this, hover your mouse over cell A3, then right click in the top left cell of that row, and select Metadata → Analysis Unit → Thickness. You will see that a new row has been added, with an associated code and name for the variable. You can then proceed to enter values for analysis unit thickness starting at Column H.</p>
+<div class="section" id="adding-the-chronology">
+<h3>Adding the Chronology<a class="headerlink" href="#adding-the-chronology" title="Permalink to this headline">¶</a></h3>
+<p>Once the age model information is added to the Chronology table, navigate back to the <strong>Data</strong> tab.  Here we can import the dates for the model.  There are two options.  If you want Tilia to build the model for you you can select <strong>Tools &gt; Chronology</strong>.  If you’ve built the model yourself using Bacon or Clam then you can import the output file directly using <strong>Tools &gt; Import Chronology &gt; Bacon/Clam</strong>.  If you have a record for which the age model is entirely made up of directly dated objects (or absolutely dated records) where the Chronology tab sheet is equivalent to the actual depths/records in the Data sheet then it is possible to directly import the Chronology Tab Sheet using <strong>Tools &gt; Import Chronology &gt; Chronologies Tabsheet</strong>.</p>
+<p>To add the chronology from Bacon or Clam that you have already created, Go to Tools &gt; Import Chronology &gt; Bacon/Clam.  Your Chronologies have numbers associated with them in the Chronologies Tab.  Make sure you’re using the right Chronology number.  Bacon and Clam have different options, but you should choose the right file and the age values that make the most sense to you.</p>
+<p>Once you click <em>OK</em>, navigate to the appropriate file and click okay. The chronology will be added to the <strong>Data</strong> tab.</p>
+<p>Common Issues:
+<em>I’ve imported my chronology, but the ages don’t appear in the Data spreadsheet!</em></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/simon/Documents/Neotoma/tilia-manual/docs/edit_data.rst</span>, line 325)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>The usual cause of this error is a misalignment between the depths of samples in Tilia’s Data spreadsheet and the depths listed in _ages.txt file outputted by Bacon or Clam.  Tilia looks for exact matches, so e.g. if the depths of samples in the Tilia file are 0.5 10.5 20.5… and the depths in the …_ages.txt file are 1 2 3 4 5 6 …. then there are no exact matches and no ages will be imported into the Tilia file. There are a couple of possible workarounds (e.g. hand-editing the _ages.txt file) but usually the best solution is to rerun Bacon or Clam with a _depths.txt input file that contains all the depths listed in the Data spreadsheet.  Bacon or Clam will then output an _ages.txt file that should import cleanly into Tilia, suing the steps above.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">tilia_manual</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="get_tilia.html">Obtaining &amp; Installing Tilia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">An Overview of a Tilia File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating.html">Getting Started with Tilia Data Entry</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Editing Your Tilia Data File</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-data-entry-process">Overview of data entry process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-tab">Data Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#entering-new-data">Entering New Data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-your-metadata">Editing Your Metadata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#publications-tab">Publications Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contacts-tab">Contacts Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#site-tab">Site Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-unit-tab">Collection Unit Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dataset-tab">Dataset Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geochronology-tab">Geochronology Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chronology-tab">Chronology Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#annotating-the-data">Annotating the <strong>Data</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-the-chronology">Adding the Chronology</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="creating.html" title="previous chapter">Getting Started with Tilia Data Entry</a></li>
+      <li>Next: <a href="tools.html" title="next chapter">Tools</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Simon Goring.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/edit_data.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

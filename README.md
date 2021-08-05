@@ -7,11 +7,10 @@ This repository is the source text for the [Tilia Manual](http://tilia-manual.re
 
 ## Authors
 
-* Simon Goring
-* Jessica Blois
-* Neotoma Development Team
-
-This work is funded through support to the Neotoma Project through NSF Geosciences (award number pending).
+* Simon Goring [![orcid](https://img.shields.io/badge/orcid-0000--0002--2700--4605-brightgreen.svg)](https://orcid.org/0000-0002-2700-4605)
+* Jessica Blois [![orcid](https://img.shields.io/badge/orcid-0000--0003--4048--177X-brightgreen.svg)](https://orcid.org/0000-0003-4048-177X)
+* Daniela Alvarado Flores -- University of California, Merced
+* Neotoma Development Team [https://neotomadb.org](https://neotomadb.org)
 
 We welcome contributions from any individual, whether code, documentation, or issue tracking. All participants are expected to follow the [code of conduct](http://github.com/SimonGoring/tilia-manual/code_of_conduct.md) for this project.
 
@@ -72,3 +71,5 @@ Build finished. The HTML pages are in _build/html.
 ```
 
 At this point you can open the `~/tilia-manual/docs/_build/html/index.html` file in your browser to see the current representation of the document.  You can navigate through the document, and re-run `make html` any time you make changes to see the current version.
+
+![image of the rendered Tilia manual page.](./docs/images/TiliaManualRendered.png)

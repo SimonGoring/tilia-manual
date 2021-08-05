@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Overview of a Tilia File &#8212; tilia_manual 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting Started with Tilia Data Entry" href="creating.html" />
+    <link rel="prev" title="Obtaining &amp; Installing Tilia" href="get_tilia.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="an-overview-of-a-tilia-file">
+<h1>An Overview of a Tilia File<a class="headerlink" href="#an-overview-of-a-tilia-file" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-data-tab">
+<h2>The Data Tab<a class="headerlink" href="#the-data-tab" title="Permalink to this headline">¶</a></h2>
+<p>The Data Tab is the first panel you see when you create a new file.  The Data tab will be the main location for the raw data collected at a site or collection unit within a site.</p>
+<p>The upper left cell of the Data tab indicates the type of data the spreadsheet is storing in the following rows (e.g., ‘pollen’, ‘vertebrate fauna’, ‘diatoms’).</p>
+<p>The Data tab is organized in a Column/Row format, where rows represent variables and the columns are for each individual stratum or sample within the collection unit (e.g., there would be a row for <em>Pinus</em> pollen, with each column (starting with column H) representing depths within a sediment core). Additional information about the samples is stored in the first set of columns (A:G).</p>
+<p>Three fixed columns are visible immediately when you open a new document: “Code”, “Name” and “Group”. There are additional columns (“Elements”, “Units”, “Context”, and “Taphonomy”) that are also available by selecting <strong>Tools</strong> &gt; <strong>Options</strong> and clicking the checkboxes within the “Show Columns” section.</p>
+<div class="figure align-default" id="id1">
+<img alt="_images/ShowColumns.png" src="_images/ShowColumns.png" />
+<p class="caption"><span class="caption-text">Spreadsheet options for the data tab.  You can make extra variable-related columns visible using Tools &gt; Options</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="columns">
+<h3>Columns<a class="headerlink" href="#columns" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Codes</dt><dd><p>Variables are assigned shortened “codes” for identification.  These codes are associated with the <a class="reference external" href="https://tilia-manual.readthedocs.io/en/latest/edit_data.html">Lookup Table</a> for a particular dataset type.  For example, <em>Asarum</em> (wild ginger) is associated with the code “Asu”.</p>
+</dd>
+<dt>Element</dt><dd><p>Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &amp;cetera).</p>
+</dd>
+<dt>Units</dt><dd><p>Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &amp;cetera).</p>
+</dd>
+<dt>Context</dt><dd><p>Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &amp;cetera).</p>
+</dd>
+<dt>Taphonomy</dt><dd><p>Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &amp;cetera).</p>
+</dd>
+<dt>Groups</dt><dd><p>Varies based on dataset type (“Pollen”, “Vertebrate Fauna”, &amp;cetera).</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="specimen-information">
+<h3>Specimen Information<a class="headerlink" href="#specimen-information" title="Permalink to this headline">¶</a></h3>
+<p>The presence or absence of specimen-level data is also indicated within the main data tab by the color of the cell: pink cells have associated specimen-level data. To view or enter the specimen information, right click on the cell and select ‘specimens’.</p>
+<div class="figure align-default" id="id2">
+<img alt="_images/Tilia_specimen_data_entry.PNG" src="_images/Tilia_specimen_data_entry.PNG" />
+<p class="caption"><span class="caption-text">Analysis units and taxa that have associated specimen-level data are indicated in pink.  Right clicking on the cell and selecting ‘specimens’ brings up a view of the specimen-level data.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="the-metadata-tab">
+<h2>The Metadata Tab<a class="headerlink" href="#the-metadata-tab" title="Permalink to this headline">¶</a></h2>
+<p>The Metadata Tab is where you put information about the dataset that is not explicitly raw data.  This includes information about the spatial location, the collection unit itself, the particular dataset, the geochronological data associated with the record, how that geochronological data was used to construct a chronology, the lithology, a special tab for Loss on Ignition sampling, contact information and associated publications.  These entries are intended to help you navigate through the tabs so that you understand what is expected of you.  We will learn how to enter data in each tab further down in this guide.</p>
+<div class="section" id="site">
+<h3>Site<a class="headerlink" href="#site" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id3">
+<img alt="_images/Tilia-Metadata-Site.png" src="_images/Tilia-Metadata-Site.png" />
+<p class="caption"><span class="caption-text">The “Site” metadata tab.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="collection-unit">
+<h3>Collection Unit<a class="headerlink" href="#collection-unit" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id4">
+<img alt="_images/Tilia-Metadata-CollectionUnit.png" src="_images/Tilia-Metadata-CollectionUnit.png" />
+<p class="caption"><span class="caption-text">The “Collection Unit” metadata tab.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="dataset">
+<h3>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id5">
+<img alt="_images/Tilia-Metadata-Dataset.png" src="_images/Tilia-Metadata-Dataset.png" />
+<p class="caption"><span class="caption-text">The “Dataset” metadata tab.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="geochronology">
+<h3>Geochronology<a class="headerlink" href="#geochronology" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id6">
+<img alt="_images/Tilia-Metadata-Geochronology.png" src="_images/Tilia-Metadata-Geochronology.png" />
+<p class="caption"><span class="caption-text">The “Geochronology” metadata tab.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="chronologies">
+<h3>Chronologies<a class="headerlink" href="#chronologies" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id7">
+<img alt="_images/Tilia-Metadata-Chronologies.png" src="_images/Tilia-Metadata-Chronologies.png" />
+<p class="caption"><span class="caption-text">The “Chronologies” metadata tab.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="lithology">
+<h3>Lithology<a class="headerlink" href="#lithology" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id8">
+<img alt="_images/Tilia-Metadata-Lithology.png" src="_images/Tilia-Metadata-Lithology.png" />
+<p class="caption"><span class="caption-text">The “Lithology” metadata tab.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="loi">
+<h3>LOI<a class="headerlink" href="#loi" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id9">
+<img alt="_images/Tilia-Metadata-LOI.png" src="_images/Tilia-Metadata-LOI.png" />
+<p class="caption"><span class="caption-text">The “LOI” metadata tab (very different from the LOL tab).</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="isotopes">
+<h3>Isotopes<a class="headerlink" href="#isotopes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id10">
+<img alt="_images/Tilia-Metadata-Isotopes.png" src="_images/Tilia-Metadata-Isotopes.png" />
+<p class="caption"><span class="caption-text">The “Isotopes” metadata tab.</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="contacts">
+<h3>Contacts<a class="headerlink" href="#contacts" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id11">
+<img alt="_images/Tilia-Metadata-Contacts.png" src="_images/Tilia-Metadata-Contacts.png" />
+<p class="caption"><span class="caption-text">The “Contacts” metadata tab.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="publications">
+<h3>Publications<a class="headerlink" href="#publications" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-default" id="id12">
+<img alt="_images/Tilia-Metadata-Publications.png" src="_images/Tilia-Metadata-Publications.png" />
+<p class="caption"><span class="caption-text">The “Publications” metadata tab.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="navigating-tilia">
+<h2>Navigating Tilia<a class="headerlink" href="#navigating-tilia" title="Permalink to this headline">¶</a></h2>
+<p>While using Tilia there are some features that are found across the data input &amp; manipulation process.  These include editing tools, the menu bar &amp; menu icons, and formatting tools.</p>
+<div class="section" id="menu-bar">
+<h3>Menu Bar<a class="headerlink" href="#menu-bar" title="Permalink to this headline">¶</a></h3>
+<p>The menu bar is fixed.  It doesn’t change, although options within individual (meta)data tabs can make options within individual menus selectable or not.</p>
+<dl class="simple">
+<dt>File</dt><dd><p>Standard options:  Open, New, Close, Neotoma, Save, Save As, Export</p>
+</dd>
+<dt>Edit</dt><dd><p>Standard options:  Undo, Cut, Copy, Copy All, Paste, Clear All, Format Cells, Formula to Value, Sort, Toggle Rare</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">tilia_manual</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="get_tilia.html">Obtaining &amp; Installing Tilia</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">An Overview of a Tilia File</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-data-tab">The Data Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#columns">Columns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specimen-information">Specimen Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-metadata-tab">The Metadata Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#site">Site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-unit">Collection Unit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dataset">Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geochronology">Geochronology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chronologies">Chronologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lithology">Lithology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loi">LOI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#isotopes">Isotopes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contacts">Contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#publications">Publications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#navigating-tilia">Navigating Tilia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#menu-bar">Menu Bar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating.html">Getting Started with Tilia Data Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_data.html">Editing Your Tilia Data File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="get_tilia.html" title="previous chapter">Obtaining &amp; Installing Tilia</a></li>
+      <li>Next: <a href="creating.html" title="next chapter">Getting Started with Tilia Data Entry</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Simon Goring.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/overview.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
