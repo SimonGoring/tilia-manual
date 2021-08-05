@@ -7,8 +7,8 @@ This repository is the source text for the [Tilia Manual](http://tilia-manual.re
 
 ## Authors
 
-* Simon Goring [![orcid](https://img.shields.io/badge/orcid-0000--0002--2700--4605-brightgreen.svg)](https://orcid.org/0000-0002-2700-4605)
 * Jessica Blois [![orcid](https://img.shields.io/badge/orcid-0000--0003--4048--177X-brightgreen.svg)](https://orcid.org/0000-0003-4048-177X)
+* Simon Goring [![orcid](https://img.shields.io/badge/orcid-0000--0002--2700--4605-brightgreen.svg)](https://orcid.org/0000-0002-2700-4605)
 * Daniela Alvarado Flores -- University of California, Merced
 * Neotoma Development Team [https://neotomadb.org](https://neotomadb.org)
 

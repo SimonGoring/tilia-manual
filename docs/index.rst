@@ -11,7 +11,7 @@ Acknowledgements
 
 This documentation would not be possible without the extrordinary work of Eric C. Grimm who has spent countless hours developing the Tilia platform.  The documentation here is a combination of text from many different Tilia users over the years: Eric Grimm, Jessica Blois and her group, Suzette Flantua and the HOPE team, Don Charles, Allison Stegner, and many more. 
 
-This document is in continuous development.  Currently this document is in the process of being updated to support Tilia v3.0.1.  To contribute to this document use the `GitHub`_ repository.  You can either raise Issues or contribute directly to the documentation.  You can also edit the documentation (through GitHub) by clicking the "Edit On GitHub" link at the top right of this page.  You must have a GitHub account to do this.  If you don't, please send me a note about suggested edits by `email`_.
+This document is in continuous development.  Currently this document is in the process of being updated to support Tilia v3.0.1.  To contribute to this document use the `GitHub`_ repository.  You can either raise Issues or contribute directly to the documentation.  You can also edit the documentation (through GitHub) by clicking the "Edit On GitHub" link at the top right of this page.  You must have a GitHub account to do this.  If you don't, please send a note about suggested edits by `email`_.
 
 .. _GitHub : http://github.com/SimonGoring/tilia-manual
 .. _email : goring@wisc.edu
